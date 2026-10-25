@@ -26,6 +26,32 @@ jsonlite::write_json(unname(vapply(metadata, function(x) x$path, character(1))),
   file.path(root,'checks/active_packages.json'), pretty=TRUE)
 cat('Active browser packages:', length(metadata), '\n')
 
+# Cache immutable runtime assets and refresh the mutable package index separately.
+# Patch the pinned upstream worker at build time; leave its app routing intact.
+assets <- shinylive:::assets_dir()
+worker <- paste(readLines(file.path(assets,'shinylive-sw.js')), collapse='\n')
+patch_worker <- function(before, after) {
+  stopifnot(grepl(before, worker, fixed=TRUE))
+  worker <<- sub(before, after, worker, fixed=TRUE)
+}
+cache_version <- paste0('knhanes_atlas-', basename(assets), '-', substr(tools::md5sum(metadata_path),1,12))
+patch_worker('var useCaching = false;', 'var useCaching = true;')
+patch_worker('var version = "v10";', paste0('var version = "',cache_version,'";'))
+patch_worker('caches.open(version + cacheName)])', 'caches.open(version + cacheName).catch(() => null)])')
+patch_worker('const keys = await caches.keys();', 'const keys = await caches.keys().catch(() => []);')
+patch_worker('return key.indexOf(version + cacheName) !== 0;',
+  'return key.startsWith("knhanes_atlas-") && key !== version + cacheName;')
+patch_worker('if (useCaching) {', 'if (useCaching && !url.pathname.endsWith("/packages/metadata.rds")) {')
+patch_worker('const cachedResponse = await caches.match(request);',
+  'const cachedResponse = await caches.match(request).catch(() => undefined);')
+patch_worker('if (request.url.startsWith(baseUrl + "/shinylive/") || request.url === baseUrl + "/favicon.ico") {',
+  'if (networkResponse.ok && (request.url.startsWith(baseUrl + "/shinylive/") || request.url === baseUrl + "/favicon.ico")) {')
+patch_worker('const cache = await caches.open(version + cacheName);\n            await cache.put(request, networkResponse.clone());',
+  paste0('try {\n              const cache = await caches.open(version + cacheName);\n',
+    '              await cache.put(request, networkResponse.clone());\n',
+    '            } catch { /* Continue using the network response when storage is unavailable. */ }'))
+writeLines(worker, file.path(root,'site/shinylive-sw.js'))
+
 # Render the About panel from the same R source so the early homepage stays current.
 setwd(file.path(root,'src'))
 app <- new.env(parent=globalenv())

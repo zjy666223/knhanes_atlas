@@ -1836,9 +1836,9 @@ function asgiToRes(res, body) {
 }
 
 // src/shinylive-sw.ts
-var useCaching = false;
+var useCaching = true;
 var cacheName = "::shinyliveServiceworker";
-var version = "v10";
+var version = "knhanes_atlas-shinylive-0.10.12-5e8fff885819";
 function addCoiHeaders(resp) {
   const headers = new Headers(resp.headers);
   headers.set("Cross-Origin-Embedder-Policy", "require-corp");
@@ -1861,17 +1861,17 @@ function addCorpHeader(resp) {
 }
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    Promise.all([self.skipWaiting(), caches.open(version + cacheName)])
+    Promise.all([self.skipWaiting(), caches.open(version + cacheName).catch(() => null)])
   );
 });
 self.addEventListener("activate", function(event) {
   event.waitUntil(
     (async () => {
       await self.clients.claim();
-      const keys = await caches.keys();
+      const keys = await caches.keys().catch(() => []);
       return Promise.all(
         keys.filter(function(key) {
-          return key.indexOf(version + cacheName) !== 0;
+          return key.startsWith("knhanes_atlas-") && key !== version + cacheName;
         }).map(function(key) {
           return caches.delete(key);
         })
@@ -1944,19 +1944,21 @@ self.addEventListener("fetch", function(event) {
   if (request.method !== "GET") {
     return;
   }
-  if (useCaching) {
+  if (useCaching && !url.pathname.endsWith("/packages/metadata.rds")) {
     event.respondWith(
       (async () => {
-        const cachedResponse = await caches.match(request);
+        const cachedResponse = await caches.match(request).catch(() => undefined);
         if (cachedResponse) {
           return cachedResponse;
         }
         try {
           const networkResponse = addCoiHeaders(await fetch(request));
           const baseUrl = self.location.origin + dirname(self.location.pathname);
-          if (request.url.startsWith(baseUrl + "/shinylive/") || request.url === baseUrl + "/favicon.ico") {
-            const cache = await caches.open(version + cacheName);
-            await cache.put(request, networkResponse.clone());
+          if (networkResponse.ok && (request.url.startsWith(baseUrl + "/shinylive/") || request.url === baseUrl + "/favicon.ico")) {
+            try {
+              const cache = await caches.open(version + cacheName);
+              await cache.put(request, networkResponse.clone());
+            } catch { /* Continue using the network response when storage is unavailable. */ }
           }
           return networkResponse;
         } catch {

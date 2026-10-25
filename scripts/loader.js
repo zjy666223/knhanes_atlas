@@ -123,15 +123,37 @@
       css.href = './shinylive/shinylive.css';
       document.head.append(css);
       const version = document.querySelector('meta[name="atlas-build"]').content;
-      const [module, appResponse, metadata] = await Promise.all([
+      const [module, appResponse, metadata, manifest] = await Promise.all([
         import('./shinylive/shinylive.js'),
         fetch(`./app.json?v=${version}`),
         // Refresh the small package index; keep versioned runtime/package files cached.
         fetch('./shinylive/webr/packages/metadata.rds', {cache: 'reload'}),
+        fetch(`./build.json?v=${version}`),
       ]);
-      if (!appResponse.ok || !metadata.ok) throw new Error('Study files unavailable');
+      if (!appResponse.ok || !metadata.ok || !manifest.ok) throw new Error('Study files unavailable');
       await metadata.arrayBuffer();
       const files = await appResponse.json();
+      const assets = ['R.wasm', 'library.data.gz', ...(await manifest.json()).active_package_archives];
+      let next = 0, loaded = 0;
+      const downloads = new AbortController();
+      // Four downloads at a time avoid serial network waits and limit memory use.
+      try {
+        await Promise.all(Array.from({length:4}, async () => {
+          while (next < assets.length) {
+            const asset = assets[next++];
+            const response = await fetch(`./shinylive/webr/${asset}`, {signal:downloads.signal});
+            if (!response.ok) throw new Error('Analysis file unavailable');
+            const reader = response.body.getReader();
+            while (!(await reader.read()).done) { /* Drain into the browser cache. */ }
+            loaded++;
+            if (!pending) status.textContent = `Loading analysis files (${loaded}/${assets.length})…`;
+          }
+        }));
+      } catch (error) {
+        downloads.abort();
+        throw error;
+      }
+      performance.mark('atlas-assets-ready');
       status.textContent = pending ? `Preparing ${pending} — it will open when ready.` : 'Starting interactive analyses…';
       module.runApp(root, 'viewer', {startFiles: files}, 'r');
     } catch (error) {

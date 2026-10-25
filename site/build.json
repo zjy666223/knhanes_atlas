@@ -1,10 +1,10 @@
 {
   "name": "knhanes_atlas",
-  "built_utc": "2026-10-25T05:09:35.975136+00:00",
+  "built_utc": "2026-10-25T05:25:46.380521+00:00",
   "format": "Shinylive for R",
   "application_sha256": "379986bf151af602896e5f64c8c44fdc7ff82f41398b22874e37592d134dac5e",
-  "homepage_sha256": "488ced6fa616cd2d8d6d4d0c76dcb81dbc7c9698bc5590f5f08c177650cab5c0",
-  "loader_sha256": "7c327ef88fffd33220ce4f30e0153cbf59021eb2fd8957b792d394c0285ff526",
+  "homepage_sha256": "7913f95fc594557af8f77bfefba91c7d58fa70fe8f1a59ca06f1232333ed366d",
+  "loader_sha256": "923c9a311352ccb83fb8f12a7690b5fba135c6bac287c705d686a193f3016ce1",
   "runtime_sha256": "5df459fb222d332e358cf08e4019c0e114398579ed8c62242bfcceeda81222ba",
   "package_archives": [
     {

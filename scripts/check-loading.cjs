@@ -46,12 +46,20 @@ async function ready(page) {
   const scroll = await page.evaluate(()=>scrollY);
   let frame = await ready(page);
   result.interactive_seconds = await page.evaluate(()=>performance.getEntriesByName('atlas-interactive-ready')[0].startTime/1000);
+  result.assets_seconds = await page.evaluate(()=>performance.getEntriesByName('atlas-assets-ready')[0].startTime/1000);
   result.scroll = {before:scroll, after:await page.evaluate(()=>scrollY)};
   assert.ok(await page.locator('#atlas-shell').isVisible(), 'Readiness must not replace the page while reading');
   assert.ok(Math.abs(await page.evaluate(()=>scrollY)-scroll)<3, 'Reading position changed');
   assert.equal(requests.filter(url=>url.includes('/data/voe/')).length, 0, 'VoE must wait for its tab');
   result.voe_not_loaded_on_home = true;
   result.reading_position_preserved = true;
+  result.cached_assets = await page.evaluate(async () => {
+    const names = (await caches.keys()).filter(name=>name.startsWith('knhanes_atlas-'));
+    const requests = (await Promise.all(names.map(async name=>(await caches.open(name)).keys()))).flat();
+    return requests.map(request=>request.url);
+  });
+  assert.ok(result.cached_assets.length >= 51);
+  assert.ok(!result.cached_assets.some(url=>url.includes('metadata.rds')||url.includes('app.json')||url.includes('/data/voe/')));
   result.package_requests = [...new Set(requests.filter(url=>url.endsWith('.tgz')))];
   assert.ok(!result.package_requests.some(url=>url.includes('/ggpubr/')||url.includes('/rstatix/')||url.includes('/lme4/')));
   report();
