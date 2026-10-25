@@ -78,7 +78,8 @@ figure_links = "".join(f'<li><a href="research/{escape(item["file"], quote=True)
 loader = (ROOT / "scripts/loader.js").read_bytes()
 (SITE / "loader.js").write_bytes(loader)
 values = {
-    "BUILD": sha256((SITE / "app.json").read_bytes()).hexdigest()[:16],
+    "BUILD": sha256((SITE / "app.json").read_bytes() +
+                    (SITE / "shinylive/webr/packages/metadata.rds").read_bytes()).hexdigest()[:16],
     "LOADER": sha256(loader).hexdigest()[:16],
     "STYLE": (ROOT / "scripts/shell.css").read_text(),
     "ABOUT": about, "NAV": nav, "RESULTS": results, "FIGURES": figure_links,
