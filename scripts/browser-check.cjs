@@ -117,11 +117,13 @@ async function select(id,value) {
   for(const label of ['categorical','education','failed']) {
     const c=cases[label];
     await select('voe_phenotype',c.phenotype_id);
+    await frame.waitForFunction(name=>document.getElementById('voe_pair_title').innerText.startsWith(name+' ~ '),c.phenotype,{timeout:60000});
+    await idle();
     await frame.waitForFunction(id=>Object.hasOwn(document.getElementById('voe_exposure').selectize.options,id),c.exposure_id,{timeout:30000});
     await select('voe_exposure',c.exposure_id);
     await frame.waitForFunction(id=>Object.hasOwn(document.getElementById('voe_contrast').selectize.options,id),c.contrast_id,{timeout:30000});
     await select('voe_contrast',c.contrast_id);
-    await frame.waitForFunction(expected=>document.getElementById('voe_contrast_text').innerText===expected,c.contrast_label,{timeout:30000});
+    await frame.waitForFunction(c=>document.getElementById('voe_contrast_text').innerText===c.contrast_label&&document.getElementById('voe_pair_title').innerText===c.phenotype+' ~ '+c.exposure,c,{timeout:60000});
     await table('voe_model_table');
     results.cases[label]={title:await frame.locator('#voe_pair_title').innerText(),contrast:await frame.locator('#voe_contrast_text').innerText(),stats:await frame.locator('#voe_pair_stats').innerText(),factors:await frame.locator('#voe_factor').evaluate(e=>Object.keys(e.selectize.options))};
     await download('voe_models_download','voe_'+label); console.log('Case:',label);report();

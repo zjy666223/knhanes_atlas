@@ -4,7 +4,8 @@ Sys.setenv(KNHANES_LOCAL_SITE=file.path(root,'site'))
 setwd(file.path(root,'src'))
 e <- new.env(parent=globalenv())
 suppressPackageStartupMessages(sys.source('app.R',envir=e))
-report <- jsonlite::fromJSON(file.path(root,'checks/browser-check.json'))
+check_dir <- file.path(root,Sys.getenv('ATLAS_CHECK_DIR','checks'))
+report <- jsonlite::fromJSON(file.path(check_dir,'browser-check.json'))
 cases <- jsonlite::fromJSON(file.path(root,'checks/cases.json'))
 checks <- list()
 compare <- function(label,expected) {
@@ -43,5 +44,5 @@ shiny::testServer(e$server, {
     }
   }
 })
-jsonlite::write_json(checks,file.path(root,'checks/download_parity.json'),auto_unbox=TRUE,pretty=TRUE)
+jsonlite::write_json(checks,file.path(check_dir,'download_parity.json'),auto_unbox=TRUE,pretty=TRUE)
 cat('All',length(checks),'browser CSV downloads match native R results.\n')
