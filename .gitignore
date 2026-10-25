@@ -1,0 +1,6 @@
+work/
+checks/
+.DS_Store
+._*
+.Rhistory
+.RData

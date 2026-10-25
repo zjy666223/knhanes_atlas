@@ -1,0 +1,150 @@
+﻿id,name,domain,unit,type,years
+p_arm_circumference,Arm circumference,anthropometry_body_composition,cm,continuous,2023;2024
+p_ast,Aspartate aminotransferase,liver,IU/L,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_bmi,Body mass index,anthropometry_body_composition,kg/m2,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_bun,Blood urea nitrogen,kidney,mg/dL,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_creatinine_serum,Serum creatinine,kidney,mg/dL,continuous,2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_creatinine_urine,Urine creatinine,kidney,mg/dL,continuous,2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2021;2022;2023;2024
+p_dbp,Diastolic blood pressure,blood_pressure,mmHg,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_fasting_glucose,Fasting plasma glucose,glycemic,mg/dL,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_fasting_triglycerides,Fasting triglycerides,lipid,mg/dL,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_grip_max_2repeats,Maximum handgrip strength (2repeats),anthropometry_body_composition,kg,continuous,2022;2023;2024
+p_hba1c,Glycated hemoglobin,glycemic,%,continuous,2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_hdl_cholesterol,"HDL cholesterol, official harmonized field",lipid,mg/dL,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_height,Standing height,anthropometry_body_composition,cm,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_hematocrit,Hematocrit,hematology,%,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_hemoglobin,Hemoglobin,hematology,g/dL,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_ldl_direct_routine,Direct LDL cholesterol,lipid,mg/dL,continuous,2015;2022;2023;2024
+p_mch,Mean corpuscular hemoglobin,hematology,pg,continuous,2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_mchc,Mean corpuscular hemoglobin concentration,hematology,g/dL,continuous,2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_mcv,Mean corpuscular volume,hematology,fL,continuous,2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_neck,Neck circumference,anthropometry_body_composition,cm,continuous,2019;2020;2021;2022;2023
+p_non_hdl_cholesterol,Non-HDL cholesterol,lipid,mg/dL,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_platelets,Platelet count,hematology,10^3/uL,continuous,2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_pulse,Resting pulse rate,blood_pressure,beats/min,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_rbc,Red blood cell count,hematology,10^6/uL,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_sbp,Systolic blood pressure,blood_pressure,mmHg,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_serum_urate,Serum urate,kidney,mg/dL,continuous,2022;2023;2024
+p_total_cholesterol,Total cholesterol,lipid,mg/dL,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_urine_albumin_2022plus,"Urine albumin, KDCA lower-limit substitution",kidney,ug/mL,continuous,2022;2023;2024
+p_urine_ph,Urine pH,kidney,pH,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_urine_specific_gravity,Urine specific gravity,kidney,ratio,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_waist,Waist circumference,anthropometry_body_composition,cm,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_wbc,White blood cell count,hematology,10^3/uL,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_weight,Body weight,anthropometry_body_composition,kg,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+p_alp_legacy,"Alkaline phosphatase, 2008–2011 assay",liver,IU/L,continuous,2009;2010;2011
+p_alt_unflagged,"Alanine aminotransferase, uncensored release years",liver,IU/L,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2021
+p_dxa_dw_hd_a_legacy,DXA head area (legacy),bone,cm2,continuous,2008;2010;2011
+p_dxa_dw_hd_bmc_legacy,DXA head bone mineral content (legacy),bone,g,continuous,2008;2010;2011
+p_dxa_dw_hd_bmd_legacy,DXA head areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2010;2011
+p_dxa_dw_hd_ft_legacy,DXA head fat mass (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_hd_ln_legacy,DXA head lean mass including bone mineral (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_hd_ms_legacy,DXA head scan-region total mass (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_hd_pft_legacy,DXA head fat percentage (legacy),anthropometry_body_composition,%,continuous,2008;2010;2011
+p_dxa_dw_llg_a_legacy,DXA left leg area (legacy),bone,cm2,continuous,2008;2010;2011
+p_dxa_dw_llg_bmc_legacy,DXA left leg bone mineral content (legacy),bone,g,continuous,2008;2010;2011
+p_dxa_dw_llg_bmd_legacy,DXA left leg areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2010;2011
+p_dxa_dw_llg_ft_legacy,DXA left leg fat mass (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_llg_ln_legacy,DXA left leg lean mass including bone mineral (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_llg_ms_legacy,DXA left leg scan-region total mass (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_llg_pft_legacy,DXA left leg fat percentage (legacy),anthropometry_body_composition,%,continuous,2008;2010;2011
+p_dxa_dw_lrb_a_legacy,DXA left ribs area (legacy),bone,cm2,continuous,2008;2010;2011
+p_dxa_dw_lrb_bmc_legacy,DXA left ribs bone mineral content (legacy),bone,g,continuous,2008;2010;2011
+p_dxa_dw_lrb_bmd_legacy,DXA left ribs areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2010;2011
+p_dxa_dw_lrm_a_legacy,DXA left arm area (legacy),bone,cm2,continuous,2008;2010;2011
+p_dxa_dw_lrm_bmc_legacy,DXA left arm bone mineral content (legacy),bone,g,continuous,2008;2010;2011
+p_dxa_dw_lrm_bmd_legacy,DXA left arm areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2010;2011
+p_dxa_dw_lrm_ft_legacy,DXA left arm fat mass (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_lrm_ln_legacy,DXA left arm lean mass including bone mineral (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_lrm_ms_legacy,DXA left arm scan-region total mass (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_lrm_pft_legacy,DXA left arm fat percentage (legacy),anthropometry_body_composition,%,continuous,2008;2010;2011
+p_dxa_dw_ls_a_legacy,DXA lumbar spine (whole-body scan) area (legacy),bone,cm2,continuous,2008;2010;2011
+p_dxa_dw_ls_bmc_legacy,DXA lumbar spine (whole-body scan) bone mineral content (legacy),bone,g,continuous,2008;2010;2011
+p_dxa_dw_ls_bmd_legacy,DXA lumbar spine (whole-body scan) areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2010;2011
+p_dxa_dw_plv_a_legacy,DXA pelvis area (legacy),bone,cm2,continuous,2008;2010;2011
+p_dxa_dw_plv_bmc_legacy,DXA pelvis bone mineral content (legacy),bone,g,continuous,2008;2010;2011
+p_dxa_dw_plv_bmd_legacy,DXA pelvis areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2010;2011
+p_dxa_dw_rlg_a_legacy,DXA right leg area (legacy),bone,cm2,continuous,2008;2010;2011
+p_dxa_dw_rlg_bmc_legacy,DXA right leg bone mineral content (legacy),bone,g,continuous,2008;2010;2011
+p_dxa_dw_rlg_bmd_legacy,DXA right leg areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2010;2011
+p_dxa_dw_rlg_ft_legacy,DXA right leg fat mass (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_rlg_ln_legacy,DXA right leg lean mass including bone mineral (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_rlg_ms_legacy,DXA right leg scan-region total mass (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_rlg_pft_legacy,DXA right leg fat percentage (legacy),anthropometry_body_composition,%,continuous,2008;2010;2011
+p_dxa_dw_rrb_a_legacy,DXA right ribs area (legacy),bone,cm2,continuous,2008;2010;2011
+p_dxa_dw_rrb_bmc_legacy,DXA right ribs bone mineral content (legacy),bone,g,continuous,2008;2010;2011
+p_dxa_dw_rrb_bmd_legacy,DXA right ribs areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2010;2011
+p_dxa_dw_rrm_a_legacy,DXA right arm area (legacy),bone,cm2,continuous,2008;2010;2011
+p_dxa_dw_rrm_bmc_legacy,DXA right arm bone mineral content (legacy),bone,g,continuous,2008;2010;2011
+p_dxa_dw_rrm_bmd_legacy,DXA right arm areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2010;2011
+p_dxa_dw_rrm_ft_legacy,DXA right arm fat mass (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_rrm_ln_legacy,DXA right arm lean mass including bone mineral (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_rrm_ms_legacy,DXA right arm scan-region total mass (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_rrm_pft_legacy,DXA right arm fat percentage (legacy),anthropometry_body_composition,%,continuous,2008;2010;2011
+p_dxa_dw_sbt_a_legacy,DXA subtotal excluding head area (legacy),bone,cm2,continuous,2008;2010;2011
+p_dxa_dw_sbt_bmc_legacy,DXA subtotal excluding head bone mineral content (legacy),bone,g,continuous,2008;2010;2011
+p_dxa_dw_sbt_bmd_legacy,DXA subtotal excluding head areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2010;2011
+p_dxa_dw_sbt_ft_legacy,DXA subtotal excluding head fat mass (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_sbt_ln_legacy,DXA subtotal excluding head lean mass including bone mineral (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_sbt_ms_legacy,DXA subtotal excluding head scan-region total mass (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_sbt_pft_legacy,DXA subtotal excluding head fat percentage (legacy),anthropometry_body_composition,%,continuous,2008;2010;2011
+p_dxa_dw_trk_ft_legacy,DXA trunk fat mass (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_trk_ln_legacy,DXA trunk lean mass including bone mineral (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_trk_ms_legacy,DXA trunk scan-region total mass (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_trk_pft_legacy,DXA trunk fat percentage (legacy),anthropometry_body_composition,%,continuous,2008;2010;2011
+p_dxa_dw_ts_a_legacy,DXA thoracic spine area (legacy),bone,cm2,continuous,2008;2010;2011
+p_dxa_dw_ts_bmc_legacy,DXA thoracic spine bone mineral content (legacy),bone,g,continuous,2008;2010;2011
+p_dxa_dw_ts_bmd_legacy,DXA thoracic spine areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2010;2011
+p_dxa_dw_wbt_a_legacy,DXA whole body area (legacy),bone,cm2,continuous,2008;2010;2011
+p_dxa_dw_wbt_bmc_legacy,DXA whole body bone mineral content (legacy),bone,g,continuous,2008;2010;2011
+p_dxa_dw_wbt_bmd_legacy,DXA whole body areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2010;2011
+p_dxa_dw_wbt_ft_legacy,DXA whole body fat mass (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_wbt_ln_legacy,DXA whole body lean mass including bone mineral (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_wbt_ms_legacy,DXA whole body scan-region total mass (legacy),anthropometry_body_composition,g,continuous,2008;2010;2011
+p_dxa_dw_wbt_pft_legacy,DXA whole body fat percentage (legacy),anthropometry_body_composition,%,continuous,2008;2010;2011
+p_dxa_dx_it_a_legacy,DXA intertrochanter area (legacy),bone,cm2,continuous,2008;2009;2010;2011
+p_dxa_dx_it_bmc_legacy,DXA intertrochanter bone mineral content (legacy),bone,g,continuous,2008;2009;2010;2011
+p_dxa_dx_it_bmd_legacy,DXA intertrochanter areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2009;2010;2011
+p_dxa_dx_l1_a_legacy,DXA lumbar L1 area (legacy),bone,cm2,continuous,2008;2009;2010;2011
+p_dxa_dx_l1_bmc_legacy,DXA lumbar L1 bone mineral content (legacy),bone,g,continuous,2008;2009;2010;2011
+p_dxa_dx_l1_bmd_legacy,DXA lumbar L1 areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2009;2010;2011
+p_dxa_dx_l2_a_legacy,DXA lumbar L2 area (legacy),bone,cm2,continuous,2008;2009;2010;2011
+p_dxa_dx_l2_bmc_legacy,DXA lumbar L2 bone mineral content (legacy),bone,g,continuous,2008;2009;2010;2011
+p_dxa_dx_l2_bmd_legacy,DXA lumbar L2 areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2009;2010;2011
+p_dxa_dx_l3_a_legacy,DXA lumbar L3 area (legacy),bone,cm2,continuous,2008;2009;2010;2011
+p_dxa_dx_l3_bmc_legacy,DXA lumbar L3 bone mineral content (legacy),bone,g,continuous,2008;2009;2010;2011
+p_dxa_dx_l3_bmd_legacy,DXA lumbar L3 areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2009;2010;2011
+p_dxa_dx_l4_a_legacy,DXA lumbar L4 area (legacy),bone,cm2,continuous,2008;2009;2010;2011
+p_dxa_dx_l4_bmc_legacy,DXA lumbar L4 bone mineral content (legacy),bone,g,continuous,2008;2009;2010;2011
+p_dxa_dx_l4_bmd_legacy,DXA lumbar L4 areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2009;2010;2011
+p_dxa_dx_lsp_a_legacy,DXA lumbar spine L1–L4 area (legacy),bone,cm2,continuous,2008;2009;2010;2011
+p_dxa_dx_lsp_bmc_legacy,DXA lumbar spine L1–L4 bone mineral content (legacy),bone,g,continuous,2008;2009;2010;2011
+p_dxa_dx_lsp_bmd_legacy,DXA lumbar spine L1–L4 areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2009;2010;2011
+p_dxa_dx_nk_a_legacy,DXA femoral neck area (legacy),bone,cm2,continuous,2008;2009;2010;2011
+p_dxa_dx_nk_bmc_legacy,DXA femoral neck bone mineral content (legacy),bone,g,continuous,2008;2009;2010;2011
+p_dxa_dx_nk_bmd_legacy,DXA femoral neck areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2009;2010;2011
+p_dxa_dx_tfm_a_legacy,DXA total femur area (legacy),bone,cm2,continuous,2008;2009;2010;2011
+p_dxa_dx_tfm_bmc_legacy,DXA total femur bone mineral content (legacy),bone,g,continuous,2008;2009;2010;2011
+p_dxa_dx_tfm_bmd_legacy,DXA total femur areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2009;2010;2011
+p_dxa_dx_tr_a_legacy,DXA trochanter area (legacy),bone,cm2,continuous,2008;2009;2010;2011
+p_dxa_dx_tr_bmc_legacy,DXA trochanter bone mineral content (legacy),bone,g,continuous,2008;2009;2010;2011
+p_dxa_dx_tr_bmd_legacy,DXA trochanter areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2009;2010;2011
+p_dxa_dx_wd_a_legacy,DXA Ward region area (legacy),bone,cm2,continuous,2008;2009;2010;2011
+p_dxa_dx_wd_bmc_legacy,DXA Ward region bone mineral content (legacy),bone,g,continuous,2008;2009;2010;2011
+p_dxa_dx_wd_bmd_legacy,DXA Ward region areal bone mineral density (legacy),bone,g/cm2,continuous,2008;2009;2010;2011
+p_fef25_75_legacy,Forced mid-expiratory flow,pulmonary,L/s,continuous,2011;2012;2013;2014;2015;2016;2017;2018;2019
+p_ferritin,Ferritin,hematology,ng/mL,continuous,2007;2008;2009;2010;2011;2012
+p_fev1_legacy,Forced expiratory volume in 1 second,pulmonary,L,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019
+p_fev1fvc_legacy,FEV1/FVC ratio,pulmonary,ratio,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019
+p_fev6_legacy,Forced expiratory volume in 6 seconds,pulmonary,L,continuous,2010;2011;2012;2013;2014;2015;2016;2017;2018;2019
+p_fvc_legacy,Forced vital capacity,pulmonary,L,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019
+p_ggt,Gamma-glutamyl transferase,liver,IU/L,continuous,2010;2011
+p_insulin_irma,Fasting insulin (IRMA),glycemic,uIU/mL,continuous,2007;2008;2009;2010
+p_ldl_direct_random,Direct LDL cholesterol,lipid,mg/dL,continuous,2009;2010;2011
+p_pef_legacy,Peak expiratory flow,pulmonary,L/s,continuous,2010;2011;2012;2013;2014;2015;2016;2017;2018;2019
+p_pth_legacy,"Intact parathyroid hormone, legacy assay",bone,pg/mL,continuous,2009;2010;2011
+p_serum_iron,Serum iron,hematology,ug/dL,continuous,2010;2011;2012
+p_tibc,Total iron-binding capacity,hematology,ug/dL,continuous,2010;2011;2012
+p_urine_albumin_early,"Urine albumin, 2011–2014",kidney,ug/mL,continuous,2011;2012;2013;2014
+p_urine_sodium,Urine sodium,kidney,mmol/L,continuous,2009;2010;2011;2014;2015;2019;2020;2021
+p_grip_max_3repeats,Maximum handgrip strength (3repeats),anthropometry_body_composition,kg,continuous,2014;2015;2016;2017;2018;2019

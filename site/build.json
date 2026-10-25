@@ -1,0 +1,368 @@
+{
+  "name": "knhanes_atlas",
+  "built_utc": "2026-10-25T03:18:59.177375+00:00",
+  "format": "Shinylive for R",
+  "application_sha256": "cb5823709765b799e1036961732aafcf6939f5ccc5afe1c03adb087035d99def",
+  "runtime_sha256": "5df459fb222d332e358cf08e4019c0e114398579ed8c62242bfcceeda81222ba",
+  "package_archives": [
+    {
+      "file": "shinylive/webr/packages/DT/DT_0.34.0.tgz",
+      "sha256": "4231c839d567df5629ac0027fb77e8d26b299546318fe661654e25022a46da00"
+    },
+    {
+      "file": "shinylive/webr/packages/Formula/Formula_1.2-6.tgz",
+      "sha256": "2a09a7f9aea2da48c60f3bc1dd21b19d24eaa6312ae2fd5599e73ce670e16308"
+    },
+    {
+      "file": "shinylive/webr/packages/MASS/MASS_7.3-66.tgz",
+      "sha256": "2abe66de8f442fdc0cd221bdb0e774ea17f56ff963dc0275bcfcd2add27ee3b5"
+    },
+    {
+      "file": "shinylive/webr/packages/Matrix/Matrix_1.7-6.tgz",
+      "sha256": "a6caf93b993de359eab932fff8ac0c39d7e2f372b885458f0f98051a9be82237"
+    },
+    {
+      "file": "shinylive/webr/packages/MatrixModels/MatrixModels_0.5-4.tgz",
+      "sha256": "35b4409b8507af68e6fee7ef8032329b7c524c4f29fe359ab60f3796f03d1c4e"
+    },
+    {
+      "file": "shinylive/webr/packages/RColorBrewer/RColorBrewer_1.1-3.tgz",
+      "sha256": "cf5564fee1b54d547dd5656afbea17e34d48f74ef97b376e495dd4e223ecafc9"
+    },
+    {
+      "file": "shinylive/webr/packages/Rdpack/Rdpack_2.6.6.tgz",
+      "sha256": "98a070922d7ffc9036152a73f8a0e5feb0915105b3384eb6f777eb2235f7baf0"
+    },
+    {
+      "file": "shinylive/webr/packages/S7/S7_0.2.2.tgz",
+      "sha256": "76b7d1dcbab977c592a2d951a07336f509243c34fa0d56f6c2c56f2b71c3aec4"
+    },
+    {
+      "file": "shinylive/webr/packages/SparseM/SparseM_1.84-2.tgz",
+      "sha256": "79bcada5eb3c067599933b76cbc9b4277eab57ea9a925a300a5c7d9774a75d8c"
+    },
+    {
+      "file": "shinylive/webr/packages/abind/abind_1.4-8.tgz",
+      "sha256": "a36034ed857449005e0ada292afa6d059bf963ff89402190dd38fd756d2c3bb2"
+    },
+    {
+      "file": "shinylive/webr/packages/backports/backports_1.5.1.tgz",
+      "sha256": "5d69010c0f924e56e2ee1f9caff212ac351b2a00f821f97ca48b2e4c5d926fa8"
+    },
+    {
+      "file": "shinylive/webr/packages/bit/bit_4.6.0.tgz",
+      "sha256": "9bb31d547e7fdf83ff1f8fc5aaa820389dd968293da29d12f7a2a7790a3eb058"
+    },
+    {
+      "file": "shinylive/webr/packages/bit64/bit64_4.8.6.tgz",
+      "sha256": "52770de052321f4899c617d210b7baf51a7028ea7b6202e1fbbd86bfa1908e71"
+    },
+    {
+      "file": "shinylive/webr/packages/boot/boot_1.3-32.tgz",
+      "sha256": "8ffe8cb4b051ae4d1d01753b25b84e0133cc2311bf68c42afe172e2482d851dd"
+    },
+    {
+      "file": "shinylive/webr/packages/broom/broom_1.0.13.tgz",
+      "sha256": "5e9c62e1a56a8a20dd80806e9c9771bf741f3097b616d6165458966863b4cfa7"
+    },
+    {
+      "file": "shinylive/webr/packages/car/car_3.1-5.tgz",
+      "sha256": "38761d29d9132b58ce5bc3e4dba07558fccb549c0c412966e8e7914543f3f1ad"
+    },
+    {
+      "file": "shinylive/webr/packages/carData/carData_3.0-6.tgz",
+      "sha256": "085048ed58cea41d053f12514f881be3d7507ae4dd96a1e9f32d3f25c8ff1e01"
+    },
+    {
+      "file": "shinylive/webr/packages/clipr/clipr_0.8.1.tgz",
+      "sha256": "f156ca79153f38eb3c7943413858af396cff05577e7bf4893949e6aba5bff811"
+    },
+    {
+      "file": "shinylive/webr/packages/colorspace/colorspace_2.1-4.tgz",
+      "sha256": "a5fd2e78564f1d7dd9f2b72a14b01ee82a24442f596437b471097a714e1226ba"
+    },
+    {
+      "file": "shinylive/webr/packages/corrplot/corrplot_0.95.tgz",
+      "sha256": "697197fcc4c47eb24039d122840deeae475be193e71477b613cb193501affe3c"
+    },
+    {
+      "file": "shinylive/webr/packages/cowplot/cowplot_1.2.0.tgz",
+      "sha256": "9dd8412ad8b9b65866a6072b5729a12e0f46cac4495370b388a320073f4e5355"
+    },
+    {
+      "file": "shinylive/webr/packages/crayon/crayon_1.5.3.tgz",
+      "sha256": "0b01044f0b8f531516427ee784bf80d0cc1a6993519b93d362d9a1ae193911d5"
+    },
+    {
+      "file": "shinylive/webr/packages/crosstalk/crosstalk_1.2.2.tgz",
+      "sha256": "ee5b94677b013093da3808c9c279736e63dd91caad05faf1c44c66a84a2febdf"
+    },
+    {
+      "file": "shinylive/webr/packages/doBy/doBy_4.7.2.tgz",
+      "sha256": "d2513dc66fdaf5162ad685c9cf80d6b55c0accd5c0c15bc0457181864ede24bb"
+    },
+    {
+      "file": "shinylive/webr/packages/dplyr/dplyr_1.2.1.tgz",
+      "sha256": "58c606c81e4539318c705f6d40a640b4cc9121e60aac3e3632d0029cf6841d08"
+    },
+    {
+      "file": "shinylive/webr/packages/evaluate/evaluate_1.0.5.tgz",
+      "sha256": "78e951393968c4d2298d9ea380bb06ab31f037dc9eaf74fac9b59a77c3801c3c"
+    },
+    {
+      "file": "shinylive/webr/packages/farver/farver_2.1.2.tgz",
+      "sha256": "f7555f2c1926f88d431ff1919c81cff48ff6eadc09de4471610312695be6cea8"
+    },
+    {
+      "file": "shinylive/webr/packages/forcats/forcats_1.0.1.tgz",
+      "sha256": "80a463ce801987ea71e36df19d0296fd136fce08e913011eca023a18539a8bfa"
+    },
+    {
+      "file": "shinylive/webr/packages/forecast/forecast_9.0.2.tgz",
+      "sha256": "edbe2743886690358bb049065e12c8218abb12ed07a54a5572c582a0f26999df"
+    },
+    {
+      "file": "shinylive/webr/packages/fracdiff/fracdiff_1.5-4.tgz",
+      "sha256": "fb19f02419e5522ebff889a8a2c67686d65ed8fe621c8146c76e157ff36f747d"
+    },
+    {
+      "file": "shinylive/webr/packages/generics/generics_0.1.4.tgz",
+      "sha256": "a9c7ca26beaef02a95fb0c971a9a1a5b8e09db3d99baf17796537d2bf9a396bc"
+    },
+    {
+      "file": "shinylive/webr/packages/ggplot2/ggplot2_4.0.3.tgz",
+      "sha256": "1a299608d88c92d5741666229c1125848e4c210b0624ebd0012af97957976ae6"
+    },
+    {
+      "file": "shinylive/webr/packages/ggpubr/ggpubr_1.0.0.tgz",
+      "sha256": "952f6d60ab9b99ba990471eb3e98144318a892e194d2a968bc363bc04b96a279"
+    },
+    {
+      "file": "shinylive/webr/packages/ggrepel/ggrepel_0.9.8.tgz",
+      "sha256": "466f87f331047aed042e52cb0a6a4165462656a525faf790f967b743a7b9af7e"
+    },
+    {
+      "file": "shinylive/webr/packages/ggridges/ggridges_0.5.7.tgz",
+      "sha256": "2b58e2284b5bf2c892fecaf57c9fce1c76ae3e4d758c409e4c5ab9683f3acaf6"
+    },
+    {
+      "file": "shinylive/webr/packages/ggsci/ggsci_5.2.0.tgz",
+      "sha256": "8052e3ad4a60e638799e4fb303fbf201d99415a86f385c1cd72f64dbee1b474a"
+    },
+    {
+      "file": "shinylive/webr/packages/ggsignif/ggsignif_0.6.4.tgz",
+      "sha256": "b79238149ecac7ab28d2f31bc22c83e2f3ea54cb1d45a3f3ec0101224df561fe"
+    },
+    {
+      "file": "shinylive/webr/packages/gridExtra/gridExtra_2.3.1.tgz",
+      "sha256": "d9421e0fd97f89d1893d770fdca2fb9ac5c4a9ac71a762f6776f1b518aaba048"
+    },
+    {
+      "file": "shinylive/webr/packages/gtable/gtable_0.3.6.tgz",
+      "sha256": "dae6408ed2ed1d759e50c5fb7e45f81348ff3f4f914cb418ac12bdeaae2ee80b"
+    },
+    {
+      "file": "shinylive/webr/packages/highr/highr_0.12.tgz",
+      "sha256": "007f33651dca953ffa35db7362776aa8a00993c6f3986c46cfdc2e0759581871"
+    },
+    {
+      "file": "shinylive/webr/packages/hms/hms_1.1.4.tgz",
+      "sha256": "dcbf8846b7d9c1cade75c25952c9794a8f1db8a4c06bdee1498940f76a12a739"
+    },
+    {
+      "file": "shinylive/webr/packages/htmlwidgets/htmlwidgets_1.6.4.tgz",
+      "sha256": "abe7fa9b13a349b06c2811d3f6aa76da33f77478115615ab4c2a5a7fbb879bc0"
+    },
+    {
+      "file": "shinylive/webr/packages/igraph/igraph_2.3.1.tgz",
+      "sha256": "7abfc0d384d47d64a0d58d37a6b3d6af1b577c11acf8224feff4c686e858a806"
+    },
+    {
+      "file": "shinylive/webr/packages/isoband/isoband_0.3.0.tgz",
+      "sha256": "bc7494f286084e8861331256df0f6ab27e519e1797e807ec100db1116d3e7a8e"
+    },
+    {
+      "file": "shinylive/webr/packages/knitr/knitr_1.52.tgz",
+      "sha256": "7d6a45ce61a39380eae654dbcf1cc79b9a4f4d3d06560e20c08fd017faaf80ac"
+    },
+    {
+      "file": "shinylive/webr/packages/labeling/labeling_0.4.3.tgz",
+      "sha256": "1d89f92c8b15aee3b4f9c8c6c0e7697f79c515558c274279fddfd03a34a6d63d"
+    },
+    {
+      "file": "shinylive/webr/packages/lattice/lattice_0.23-1.tgz",
+      "sha256": "b1f6c45be57330e13595bfeb87550c21e3b09d6ee2a58551c19911d345a72722"
+    },
+    {
+      "file": "shinylive/webr/packages/lazyeval/lazyeval_0.2.3.tgz",
+      "sha256": "0a7b5b8c75a5ab7333904dc75e15391491ea92f8a6b0eae5b53e5153d04fc137"
+    },
+    {
+      "file": "shinylive/webr/packages/lme4/lme4_2.0-6.tgz",
+      "sha256": "b952a58300df9161b9ccc0d1cc42ee5a6365ffc565764140bf6ac682e8e857a1"
+    },
+    {
+      "file": "shinylive/webr/packages/lmtest/lmtest_0.9-40.tgz",
+      "sha256": "ed0c0ff0caa1cab87b420102ea80cc515f35228c6e17d80ac515cbab8f62653e"
+    },
+    {
+      "file": "shinylive/webr/packages/mgcv/mgcv_1.9-4.tgz",
+      "sha256": "719ca805aaf34eaf142990bc9d9b81862682950d3b19ed95475212ef8e02c8da"
+    },
+    {
+      "file": "shinylive/webr/packages/minqa/minqa_1.2.8.tgz",
+      "sha256": "717a589602cd8600369631ed65de78421b693df66ace2dc1af8ed99607ee4639"
+    },
+    {
+      "file": "shinylive/webr/packages/modelr/modelr_0.1.11.tgz",
+      "sha256": "467a9805adf9793a808cd5b0833f03ddfa77e86f096556014064f767b987e37c"
+    },
+    {
+      "file": "shinylive/webr/packages/nlme/nlme_3.1-171.tgz",
+      "sha256": "367d4c9dc2fcff190a7762b0db9a1b694dc3199258934c0be7071449079c552d"
+    },
+    {
+      "file": "shinylive/webr/packages/nloptr/nloptr_2.2.1.9000.tgz",
+      "sha256": "ff7eef53f2ae539a878b12b54ab06f01345b0313297284185c579d4fdb30efa3"
+    },
+    {
+      "file": "shinylive/webr/packages/nnet/nnet_7.3-21.tgz",
+      "sha256": "9959de8cc6084c7bf8b29e8669203e4057bede66dbbe9e2e3b16352808bfe21f"
+    },
+    {
+      "file": "shinylive/webr/packages/numDeriv/numDeriv_2016.8-1.1.tgz",
+      "sha256": "f5161c0658fcd60e45e70ffe83e2976b182128dcd5c9e4d0fb2a1466bf38a5c6"
+    },
+    {
+      "file": "shinylive/webr/packages/pbkrtest/pbkrtest_0.5.5.tgz",
+      "sha256": "ae1f74c8106bee2234cd4046cbe2e744322240ca2f1f258883ad130c9e56e8d6"
+    },
+    {
+      "file": "shinylive/webr/packages/pillar/pillar_1.11.1.tgz",
+      "sha256": "40c9fcfbfd39a0aa3e7ea784b73abcd7a0a1d4677628bb394ab0c56a0aad9be6"
+    },
+    {
+      "file": "shinylive/webr/packages/pkgconfig/pkgconfig_2.0.3.tgz",
+      "sha256": "fc97bdb16f209e9e79fc8e64234a1bb1263035f5f244ea8b748885b28e3c5d97"
+    },
+    {
+      "file": "shinylive/webr/packages/polynom/polynom_1.4-1.tgz",
+      "sha256": "25c211331d267266d3c3d48b07c2901c3cd01035dfcd470ce6b8760f4ef1b291"
+    },
+    {
+      "file": "shinylive/webr/packages/purrr/purrr_1.2.2.tgz",
+      "sha256": "bd87e3e08ace87d8d6be7a47f4d2620843f15beb2f6e54f28eb90b1bdbb731e0"
+    },
+    {
+      "file": "shinylive/webr/packages/quantreg/quantreg_6.1.tgz",
+      "sha256": "9a767d236d7cf0d6f979ceb92b05d1b79bdbb19b732989b037872dbbca4150bd"
+    },
+    {
+      "file": "shinylive/webr/packages/rbibutils/rbibutils_2.4.1.tgz",
+      "sha256": "f9be998342d3075d87254c78c968a45ea018bbf9c7d7c9de8b57d4554f0f0143"
+    },
+    {
+      "file": "shinylive/webr/packages/reactR/reactR_0.6.1.tgz",
+      "sha256": "3ead69f233882074685153e56f907e6fd01103ab594003e584e7f0a1ed16bc1c"
+    },
+    {
+      "file": "shinylive/webr/packages/reactable/reactable_0.4.5.tgz",
+      "sha256": "56ac960e1cbefc526787c23d15ca712d6eac5a39e6781d806c4a0c7c4ee94d5f"
+    },
+    {
+      "file": "shinylive/webr/packages/readr/readr_2.2.0.tgz",
+      "sha256": "e865f2a383b658502f19fc7eedea7010676721dd4068a70c893984b2a5f94acf"
+    },
+    {
+      "file": "shinylive/webr/packages/reformulas/reformulas_0.4.4.tgz",
+      "sha256": "aec634511cc48030c90777fa5f04a1cb879a65f73a09f5f0d799fb9d907412dc"
+    },
+    {
+      "file": "shinylive/webr/packages/rmarkdown/rmarkdown_2.32.tgz",
+      "sha256": "22a92d75aab2b29dc3a8a9fd11d15ecf1dd08e26ee35b6254d5c00473a597322"
+    },
+    {
+      "file": "shinylive/webr/packages/rstatix/rstatix_1.1.0.tgz",
+      "sha256": "ed1609593b61af87057bc357d19251edd55707ff12d72832632bf6306520bebb"
+    },
+    {
+      "file": "shinylive/webr/packages/scales/scales_1.4.0.tgz",
+      "sha256": "1e3fd9c44c6bba3ea2911ee8a2ee9a8cf5a47013a2ca6db8862cb10a1512ba96"
+    },
+    {
+      "file": "shinylive/webr/packages/stringi/stringi_1.8.9.tgz",
+      "sha256": "9dbaf879802701c962215cea056873187e4034ea8aa4d9c3309871c3fa190a1c"
+    },
+    {
+      "file": "shinylive/webr/packages/stringr/stringr_1.6.0.tgz",
+      "sha256": "be6e72ef1c8ddecbf44aa42a7ba7c7a333645e218ab57f92992a8a5b7a4030f3"
+    },
+    {
+      "file": "shinylive/webr/packages/survival/survival_3.8-12.tgz",
+      "sha256": "a1e35add8cb37a3e7096ffc7a3f4484b1a8a3d0c9d7b59947095837a09bf3935"
+    },
+    {
+      "file": "shinylive/webr/packages/tibble/tibble_3.3.1.tgz",
+      "sha256": "b7f65a179045923b66d9e749aac9c9183b32eef1c4b1a7242eb889f07b948578"
+    },
+    {
+      "file": "shinylive/webr/packages/tidyr/tidyr_1.3.2.tgz",
+      "sha256": "78ce1111b32640d981f9e5ff92095c7b3d21fb7ef1a39238fb1643f3359ace95"
+    },
+    {
+      "file": "shinylive/webr/packages/tidyselect/tidyselect_1.2.1.tgz",
+      "sha256": "df3668720dcce42a097cdef7e92d344dfd069a913647cbc1c0fa19ed0704285b"
+    },
+    {
+      "file": "shinylive/webr/packages/timeDate/timeDate_4052.112.tgz",
+      "sha256": "0c4641d076a52df03bbd53b192080102b8668b3135f52c85b8ae20c32065c882"
+    },
+    {
+      "file": "shinylive/webr/packages/tinytex/tinytex_0.61.tgz",
+      "sha256": "3ebec7f4d56559091a77ad768d6b5c6fa8efe5c093aa4a94bd13c7f9456193be"
+    },
+    {
+      "file": "shinylive/webr/packages/tzdb/tzdb_0.5.0.tgz",
+      "sha256": "ad6d066b0a31948acc122f8c170f07cb7457c6293c9f8a9734251fddfc8ff93f"
+    },
+    {
+      "file": "shinylive/webr/packages/urca/urca_1.3-4.tgz",
+      "sha256": "20d2cf77f431da64549fc3773aa4dd2d46abd5207ee24378c67b9257f497dead"
+    },
+    {
+      "file": "shinylive/webr/packages/utf8/utf8_1.2.6.tgz",
+      "sha256": "51702a5960a8e85bca8a9064c37ec2f006f9f2655b1e8f35b7c6ef18362340c3"
+    },
+    {
+      "file": "shinylive/webr/packages/vctrs/vctrs_0.7.3.tgz",
+      "sha256": "42cc19d325e7de2160490273d97099049f261e8b6c3e6736391d96e43923798d"
+    },
+    {
+      "file": "shinylive/webr/packages/viridisLite/viridisLite_0.4.3.tgz",
+      "sha256": "cbb327d9e0efe61bfa40ba89c9af3dc05fc5bd76ea69fc485ef3f64fe1785983"
+    },
+    {
+      "file": "shinylive/webr/packages/vroom/vroom_1.7.1.9000.tgz",
+      "sha256": "e012147ccabe8e1dbed5e56fe188e11d4aa23f8c4286fafe877b0af1c81ce177"
+    },
+    {
+      "file": "shinylive/webr/packages/xfun/xfun_0.61.tgz",
+      "sha256": "62e6499ecbf49a3a2fc7343ac836c91c80f4d6bab5edeaed97fc1450230ff686"
+    },
+    {
+      "file": "shinylive/webr/packages/yaml/yaml_2.3.12.tgz",
+      "sha256": "027e4bd87fcd16d0ba744dd41c51e2eb711c07d873f6050e65c8daf454d74f13"
+    },
+    {
+      "file": "shinylive/webr/packages/zoo/zoo_1.9-1.tgz",
+      "sha256": "c3dd43342691e817161b98de107c71b89b647af2a04d3b083f80c1c52bca949b"
+    }
+  ],
+  "vibration_phenotype_files": 298,
+  "study_results": {
+    "pairs": 24008,
+    "coefficient_contrasts": 26078,
+    "evaluated_models": 1536512,
+    "fitted_models": 1535744
+  }
+}

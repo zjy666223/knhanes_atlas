@@ -1,0 +1,79 @@
+[
+  {
+    "preview": "figures/10_研究流程.png",
+    "title": "Figure 1 · Study workflow",
+    "file": "figures/10_研究流程.png",
+    "source_file": "figure1.png",
+    "sha256": "7740023df09cc632bfd8a483adbf45171c4f34c7d4b9b5f6023ca8b647303984"
+  },
+  {
+    "preview": "figures/01_关联图谱.png",
+    "title": "Figure 2 · Association atlas",
+    "file": "figures/01_关联图谱.pdf",
+    "source_file": "Figure 2.pdf",
+    "sha256": "b76d4d296d880eeafa85c72cc0012037f61befb11f0b8baebe55b0816b2dd0a3"
+  },
+  {
+    "preview": "figures/02_方差解释.png",
+    "title": "Figure 3 · Variance explained",
+    "file": "figures/02_方差解释.pdf",
+    "source_file": "Figure 3.pdf",
+    "sha256": "375c7b68bc6d91db420941204cadeb685a3e142b9ee418527277c71757f3a661"
+  },
+  {
+    "preview": "figures/03_关联矩阵.png",
+    "title": "Figure 4 · Association matrix",
+    "file": "figures/03_关联矩阵.pdf",
+    "source_file": "Figure 4.pdf",
+    "sha256": "1600e5ad2316e8616c25737ec076a8e88623e27ae7118f6ea7d200fc4fa83f25"
+  },
+  {
+    "preview": "figures/04_暴露网络.png",
+    "title": "Figure 5 · Exposure networks",
+    "file": "figures/04_暴露网络.pdf",
+    "source_file": "Figure 5.pdf",
+    "sha256": "573dbd63e4fb86ec9218b9bde60829e735cd8032df90395ccf6546f635760fa4"
+  },
+  {
+    "preview": "figures/05_年度重复.png",
+    "title": "Extended Data 2 · Annual recurrence",
+    "file": "figures/05_年度重复.pdf",
+    "source_file": "Figure Extended 2.pdf",
+    "sha256": "e79ac2caf457cc1dc0be58029b2ba2ca38e4ae0ee09365ee656f1cb3df5bff27"
+  },
+  {
+    "preview": "figures/06_调整模型.png",
+    "title": "Extended Data 3 · Adjustment models",
+    "file": "figures/06_调整模型.pdf",
+    "source_file": "Figure Extended 3.pdf",
+    "sha256": "432bdbdff6ba8f60629773417df8652a9ecc39a030bf4db790d8643cf112b7c4"
+  },
+  {
+    "preview": "figures/11_效应振动.png",
+    "title": "Extended Data 4 · Vibration of effects",
+    "file": "figures/11_效应振动.pdf",
+    "source_file": "Figure Extended 4_v1.pdf",
+    "sha256": "5156772ed34805f9341c1e4596d7c619970f6c1a34525d594dde3e9a984a92fd"
+  },
+  {
+    "preview": "figures/07_测量一致.png",
+    "title": "Extended Data 5 · Measurement concordance",
+    "file": "figures/07_测量一致.pdf",
+    "source_file": "Figure Extended 5.pdf",
+    "sha256": "48385aaefc7534a92c42fd71eb8d68ac15c5e88cba039bdbeab2023d5ac2f1ee"
+  },
+  {
+    "preview": "figures/08_年龄交互.png",
+    "title": "Extended Data 7 · Age interactions",
+    "file": "figures/08_年龄交互.pdf",
+    "source_file": "Figure Extended 7.pdf",
+    "sha256": "016ec04d5f1277773ea0e73693931eed3e515b311d6b6c50dcfc5d30e815170a"
+  },
+  {
+    "preview": "figures/09_关联谱.png",
+    "title": "Extended Data 8 · Association profiles",
+    "file": "figures/09_关联谱.pdf",
+    "source_file": "Figure Extended 8.pdf",
+    "sha256": "5171d3016d5fccb23d0dddd1eee1d1c37eb4e5c92060c2ab605dca3401f4a9d9"
+  }
+]

@@ -1,0 +1,17 @@
+/* Keep the original Bootstrap/Shiny layout. Apply the study's table rules only. */
+.reactable .rt-table{border-top:1.5px solid #333;border-bottom:1.5px solid #333;background:#fff}
+.reactable .rt-thead{border-bottom:1px solid #333}
+.reactable .rt-tr,.reactable .rt-td,.reactable .rt-th{border-left:0!important;border-right:0!important;background:#fff}
+.reactable .rt-tbody .rt-tr-group{border-bottom:0}
+.reactable .rt-td{border-bottom:0!important}
+img{max-width:100%}
+.study-flowchart{display:block;width:100%;max-width:1000px;height:auto;margin:20px 0 12px}
+.voe-heading h1{font-size:30px;margin-bottom:14px}
+.voe-heading h3{font-size:18px;font-weight:400;line-height:1.45;margin:0 0 18px}
+.voe-plots{padding-top:18px}
+.study-table-wrap{overflow-x:auto;margin:16px 0 24px}
+.study-table{width:100%;border-top:1.5px solid #333;border-bottom:1.5px solid #333;background:#fff;font-size:inherit}
+.study-table thead{border-bottom:1px solid #333}
+.study-table th,.study-table td{padding:8px 12px;vertical-align:top;text-align:left;background:#fff;white-space:nowrap}
+#voe_models_download,#voe_drivers_download{display:block;max-width:100%;white-space:normal;text-align:left}
+@media(max-width:991px){.voe-plots .col-sm-6{width:100%;float:none}}

@@ -1,0 +1,336 @@
+﻿id,name,domain,unit,type,years
+bio_d3_lcms,25-hydroxyvitamin D3 (LC-MS/MS),nutrition_biomarkers,ng/mL,continuous,2022;2023;2024
+bio_total_25ohd_ria,Total 25-hydroxyvitamin D (RIA),nutrition_biomarkers,ng/mL,continuous,2008;2009;2010;2011;2012;2013;2014
+bio_vita,Serum vitamin A,nutrition_biomarkers,mg/L,continuous,2016;2017;2018
+bio_vite,Serum vitamin E,nutrition_biomarkers,mg/L,continuous,2016;2017;2018
+diet_24h_ash,Ash intake (24-hour recall),dietary_intake,g/day,continuous,2007;2008;2009;2010;2011;2012
+diet_24h_b1,Thiamin intake (24-hour recall),dietary_intake,mg/day,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_b2,Riboflavin intake (24-hour recall),dietary_intake,mg/day,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_beta_carotene,Beta-carotene intake (24-hour recall),dietary_intake,µg/day,continuous,2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_ca,Calcium intake (24-hour recall),dietary_intake,mg/day,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_carot_legacy,"Carotene intake, legacy definition (24-hour recall)",dietary_intake,µg/day,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015
+diet_24h_cho,Carbohydrate intake (24-hour recall),dietary_intake,g/day,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_chol,Cholesterol intake (24-hour recall),dietary_intake,mg/day,continuous,2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_en,Energy intake (24-hour recall),dietary_intake,kcal/day,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_fat,Total fat intake (24-hour recall),dietary_intake,g/day,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_fe,Iron intake (24-hour recall),dietary_intake,mg/day,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_fiber,Crude fiber intake (24-hour recall),dietary_intake,g/day,continuous,2007;2008;2009;2010;2011;2012
+diet_24h_folate,Folate intake (24-hour recall),dietary_intake,µg DFE/day,continuous,2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_intk,Total food intake (24-hour recall),dietary_intake,g/day,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_k,Potassium intake (24-hour recall),dietary_intake,mg/day,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_mg,Magnesium intake (24-hour recall),dietary_intake,mg/day,continuous,2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_mufa,Monounsaturated fatty acid intake (24-hour recall),dietary_intake,g/day,continuous,2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_n3,n-3 fatty acid intake (24-hour recall),dietary_intake,g/day,continuous,2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_n6,n-6 fatty acid intake (24-hour recall),dietary_intake,g/day,continuous,2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_na,Sodium intake (24-hour recall),dietary_intake,mg/day,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_niac,Niacin intake (24-hour recall),dietary_intake,mg/day,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_phos,Phosphorus intake (24-hour recall),dietary_intake,mg/day,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_prot,Protein intake (24-hour recall),dietary_intake,g/day,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_pufa,Polyunsaturated fatty acid intake (24-hour recall),dietary_intake,g/day,continuous,2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_retin,Retinol intake (24-hour recall),dietary_intake,µg/day,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_sfa,Saturated fatty acid intake (24-hour recall),dietary_intake,g/day,continuous,2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_sugar,Total sugar intake (24-hour recall),dietary_intake,g/day,continuous,2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_tdf,Total dietary fiber intake (24-hour recall),dietary_intake,g/day,continuous,2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_va,Vitamin A intake (retinol equivalents) (24-hour recall),dietary_intake,µg RE/day,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018
+diet_24h_va_rae,Vitamin A intake (retinol activity equivalents) (24-hour recall),dietary_intake,µg RAE/day,continuous,2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_vitc,Vitamin C intake (24-hour recall),dietary_intake,mg/day,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_vitd,Vitamin D intake (24-hour recall),dietary_intake,µg/day,continuous,2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_vite,Vitamin E intake (24-hour recall),dietary_intake,mg α-TE/day,continuous,2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_water,Water from foods (24-hour recall),dietary_intake,g/day,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_24h_zn,Zinc intake (24-hour recall),dietary_intake,mg/day,continuous,2016;2017;2018;2019;2020;2021;2022;2023;2024
+diet_beverage_frequency_caffeine,Energy drinks frequency in the past year,dietary_intake,ordered frequency category,ordinal,2019;2020;2021
+diet_beverage_frequency_coffee,Unsweetened coffee frequency in the past year,dietary_intake,ordered frequency category,ordinal,2019;2020;2021
+diet_beverage_frequency_cwater,Carbonated water frequency in the past year,dietary_intake,ordered frequency category,ordinal,2019;2020;2021
+diet_beverage_frequency_fvjuice,Unsweetened fruit and vegetable juice frequency in the past year,dietary_intake,ordered frequency category,ordinal,2019;2020;2021
+diet_beverage_frequency_milk,Plain milk frequency in the past year,dietary_intake,ordered frequency category,ordinal,2019;2020;2021
+diet_beverage_frequency_scoffee,Sweetened coffee frequency in the past year,dietary_intake,ordered frequency category,ordinal,2019;2020;2021
+diet_beverage_frequency_sfvjuice,Sweetened fruit and vegetable juice frequency in the past year,dietary_intake,ordered frequency category,ordinal,2019;2020;2021
+diet_beverage_frequency_smilk,Flavored milk frequency in the past year,dietary_intake,ordered frequency category,ordinal,2019;2020;2021
+diet_beverage_frequency_soda,Carbonated sweetened beverages frequency in the past year,dietary_intake,ordered frequency category,ordinal,2019;2020;2021
+diet_beverage_frequency_sports,"Sports, electrolyte and vitamin drinks frequency in the past year",dietary_intake,ordered frequency category,ordinal,2019;2020;2021
+diet_beverage_frequency_stea,Sweetened tea frequency in the past year,dietary_intake,ordered frequency category,ordinal,2019;2020;2021
+diet_beverage_frequency_tea,Unsweetened tea frequency in the past year,dietary_intake,ordered frequency category,ordinal,2019;2020;2021
+diet_beverage_frequency_yogurt,Fermented dairy drinks and yogurt frequency in the past year,dietary_intake,ordered frequency category,ordinal,2019;2020;2021
+diet_beverage_portion_coffee,Unsweetened coffee portion among at least weekly consumers,dietary_intake,ordered portion category,ordinal,2019;2020;2021
+diet_beverage_portion_milk,Plain milk portion among at least weekly consumers,dietary_intake,ordered portion category,ordinal,2019;2020;2021
+diet_beverage_portion_scoffee,Sweetened coffee portion among at least weekly consumers,dietary_intake,ordered portion category,ordinal,2019;2020;2021
+diet_beverage_portion_sfvjuice,Sweetened fruit and vegetable juice portion among at least weekly consumers,dietary_intake,ordered portion category,ordinal,2019;2020;2021
+diet_beverage_portion_soda,Carbonated sweetened beverages portion among at least weekly consumers,dietary_intake,ordered portion category,ordinal,2019;2020;2021
+diet_beverage_portion_sports,"Sports, electrolyte and vitamin drinks portion among at least weekly consumers",dietary_intake,ordered portion category,ordinal,2019;2020;2021
+diet_beverage_portion_tea,Unsweetened tea portion among at least weekly consumers,dietary_intake,ordered portion category,ordinal,2019;2020;2021
+diet_beverage_portion_yogurt,Fermented dairy drinks and yogurt portion among at least weekly consumers,dietary_intake,ordered portion category,ordinal,2019;2020;2021
+diet_ffq_food_anch,Anchovies consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_apple,Apples consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_banana,Bananas consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_barley,Mixed-grain rice consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_beer,Beer consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_bellfi,Bellflower root consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_bibim,Bibimbap and fried rice consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_bn_milk,Soy milk consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_bncurd,"Plain, braised and fried tofu consumption frequency (quantitative FFQ)",dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_bre,Sliced bread consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_brocol,Boiled broccoli and cabbage consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_buno,Cold noodles consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_butter,Butter and margarine consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_c_pork,Fried pork cutlet and sweet-and-sour pork consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_c_yogu,Spoonable yogurt consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_cake,"Sponge cake, cake and chocolate pie consumption frequency (quantitative FFQ)",dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_cereal,Breakfast cereal consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_chno,Black-bean and spicy seafood noodles consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_chnut,Chestnuts consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_choco,Chocolate consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_citrus,Oranges consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_coffee,Coffee consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_cookie,Cookies and crackers consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_corn,Steamed and roasted corn consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_cream,Coffee creamer consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_cucumb,Raw and seasoned cucumber consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_curry,Curry rice consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_dump,Dumplings consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_f_beef,Beef bulgogi consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_f_chic,Fried chicken consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_f_egg,Fried and rolled eggs consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_f_pork,Stir-fried and marinated grilled pork consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_f_pota,Stir-fried and braised potatoes consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_f_rcak,Stir-fried rice cakes consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_f_swed,Stir-fried sea-mustard stems consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_f_veg,Japchae consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_fer_bn,Bean and chili sauces consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_fjuice,Fruit juice consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_fpaste,Fish cakes in stir-fries and soups consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_garlic,Garlic consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_gbaver,Grain drinks and sweet-rice beverages consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_gimbab,Gimbap consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_glav,Green-laver and sea-mustard salads consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_grape,Grapes consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_greeno,Seasoned scallions and chives consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_hairt,Grilled or braised hairtail and croaker consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_ham,Ham consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_hamber,Hamburgers and sandwiches consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_icecm,Ice cream and frozen confections consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_instno,Instant and cup noodles consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_j_bncd,Tofu and soft-tofu stews consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_j_buda,Sausage stew consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_j_kimc,Kimchi stew and stir-fried kimchi consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_j_poll,Pollock and spicy seafood stews consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_j_soyp,Soybean-paste and fermented-bean stews consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_jam,Jam consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_kimchi,Chinese-cabbage kimchi consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_kiwi,Kiwi fruit consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_l_yogu,Liquid yogurt consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_lav,Laver consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_macker,Grilled or braised mackerel and saury consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_milk,Plain milk consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_mmelon,Korean melon consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_mushro,Stir-fried mushrooms consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_okimch,Other kimchi consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_oveg,Other seasoned vegetables consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_pcake,Savory vegetable pancakes consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_peach,Peaches consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_peanut,Peanuts consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_pear,Pears consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_pers,Persimmons and dried persimmons consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_pizza,Pizza consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_porkby,Korean blood sausage consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_pumpki,Cooked squash consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_r_beef,Grilled beef consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_r_duck,Grilled duck consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_r_pork,Grilled pork belly consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_radi,Raw and pickled radish consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_rawveg,Leaf-wrap vegetables and green peppers consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_rb_bre,Sweet filled bread consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_rcak,Traditional rice cakes consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_rice,White rice consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_root,Braised lotus and burdock roots consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_rwine,Makgeolli consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_s_bean,Braised beans consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_s_beef,Beef and radish soups consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_s_chic,Stir-fried and braised chicken consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_s_egg,Boiled and steamed eggs consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_s_poll,Dried-pollock soup consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_s_pork,Boiled pork consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_s_pota,Steamed and roasted potatoes consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_s_rcak,Rice-cake soup consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_s_soyp,Soybean-paste soup consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_s_swed,Sea-mustard soup consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_scrab,Marinated crab consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_sfish,Salted fermented seafood consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_snack,Savory snack foods consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_soda,Carbonated sweetened beverages consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_soju,Soju consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_spinac,Seasoned spinach consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_sprou,Soybean and mung-bean sprouts consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_squid,Squid and dried squid consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_straw,Strawberries consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_sugar,Sugar consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_sveg,Pickled vegetables consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_swpota,Steamed and roasted sweet potatoes consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_t_beef,Beef-bone soups consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_t_chic,Ginseng and whole-chicken soups consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_t_loac,Loach soup consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_t_pota,Pork-bone soup consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_tang,Tangerines consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_tea,Green tea consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_tomato,Tomatoes and cherry tomatoes consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_vsalad,Vegetable salad consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_whno,Wheat noodles and udon consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_food_wmelon,Watermelon consumption frequency (quantitative FFQ),dietary_intake,times/week,continuous,2012;2013;2014;2015;2016
+diet_ffq_nutrient_b1,Thiamin intake (quantitative FFQ),dietary_intake,mg/day,continuous,2012;2013;2014;2015;2016
+diet_ffq_nutrient_b2,Riboflavin intake (quantitative FFQ),dietary_intake,mg/day,continuous,2012;2013;2014;2015;2016
+diet_ffq_nutrient_ca,Calcium intake (quantitative FFQ),dietary_intake,mg/day,continuous,2012;2013;2014;2015;2016
+diet_ffq_nutrient_carot,Carotene intake (legacy definition) (quantitative FFQ),dietary_intake,µg/day,continuous,2012;2013;2014;2015;2016
+diet_ffq_nutrient_cho,Carbohydrate intake (quantitative FFQ),dietary_intake,g/day,continuous,2012;2013;2014;2015;2016
+diet_ffq_nutrient_en,Energy intake (quantitative FFQ),dietary_intake,kcal/day,continuous,2012;2013;2014;2015;2016
+diet_ffq_nutrient_fat,Total fat intake (quantitative FFQ),dietary_intake,g/day,continuous,2012;2013;2014;2015;2016
+diet_ffq_nutrient_fe,Iron intake (quantitative FFQ),dietary_intake,mg/day,continuous,2012;2013;2014;2015;2016
+diet_ffq_nutrient_k,Potassium intake (quantitative FFQ),dietary_intake,mg/day,continuous,2012;2013;2014;2015;2016
+diet_ffq_nutrient_mufa,Monounsaturated fatty acid intake (quantitative FFQ),dietary_intake,g/day,continuous,2012;2013;2014;2015;2016
+diet_ffq_nutrient_n3,n-3 fatty acid intake (quantitative FFQ),dietary_intake,g/day,continuous,2012;2013;2014;2015;2016
+diet_ffq_nutrient_n6,n-6 fatty acid intake (quantitative FFQ),dietary_intake,g/day,continuous,2012;2013;2014;2015;2016
+diet_ffq_nutrient_na,Sodium intake (quantitative FFQ),dietary_intake,mg/day,continuous,2012;2013;2014;2015;2016
+diet_ffq_nutrient_niac,Niacin intake (quantitative FFQ),dietary_intake,mg/day,continuous,2012;2013;2014;2015;2016
+diet_ffq_nutrient_phos,Phosphorus intake (quantitative FFQ),dietary_intake,mg/day,continuous,2012;2013;2014;2015;2016
+diet_ffq_nutrient_prot,Protein intake (quantitative FFQ),dietary_intake,g/day,continuous,2012;2013;2014;2015;2016
+diet_ffq_nutrient_pufa,Polyunsaturated fatty acid intake (quantitative FFQ),dietary_intake,g/day,continuous,2012;2013;2014;2015;2016
+diet_ffq_nutrient_retin,Retinol intake (quantitative FFQ),dietary_intake,µg/day,continuous,2012;2013;2014;2015;2016
+diet_ffq_nutrient_sfa,Saturated fatty acid intake (quantitative FFQ),dietary_intake,g/day,continuous,2013;2014;2015;2016
+diet_ffq_nutrient_tdf,Total dietary fiber intake (quantitative FFQ),dietary_intake,g/day,continuous,2012;2013;2014;2015;2016
+diet_ffq_nutrient_va,Vitamin A intake (retinol equivalents) (quantitative FFQ),dietary_intake,µg RE/day,continuous,2012;2013;2014;2015;2016
+diet_ffq_nutrient_vitc,Vitamin C intake (quantitative FFQ),dietary_intake,mg/day,continuous,2012;2013;2014;2015;2016
+diet_freq63_anch,Anchovies consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_apple,Apples consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_banana,Bananas consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_barley,Barley and mixed grains consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_bean,Beans consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_beef,Beef consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_beer,Beer consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_bn_cd,Tofu consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_bn_mlk,Soy milk consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_bread,Bread consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_cabb,Cabbage consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_carrot,Carrots consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_chick,Chicken consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_citrus,Oranges consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_clam,Shellfish consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_coffee,Coffee consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_crack,Snacks and crackers consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_cucum,Cucumber consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_egg,Eggs consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_fpaste,Fish cakes consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_fried,Fried foods consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_grape,Grapes consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_ham,Ham and sausage consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_hamber,Hamburgers consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_icecm,Ice cream consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_instnd,Instant noodles consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_kcabb,Chinese cabbage consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_laver,Laver consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_mack,Mackerel consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_milk,Milk consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_mmelon,Korean melon consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_mush,Mushrooms consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_noodle,Noodles consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_peach,Peaches consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_pear,Pears consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_pepper,Peppers consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_pers,Persimmons consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_pizza,Pizza consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_poll,Pollock consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_pork,Pork consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_potato,Potatoes consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_pump,Squash consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_radish,Radish consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_rcake,Rice cakes consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_rd_lv,Radish leaves consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_rice,Rice consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_rwine,Makgeolli consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_seawd,Sea mustard consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_sfish,Salted fermented seafood consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_soda,Carbonated beverages consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_soju,Soju consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_spin,Spinach consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_sprout,Soybean sprouts consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_squid,Squid consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_straw,Strawberries consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_swpot,Sweet potatoes consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_tang,Tangerines consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_tea,Green tea consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_tomato,Tomatoes consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_tuna,Tuna consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_wmelon,Watermelon consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_yfish,Yellow croaker consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_freq63_yogurt,Yogurt consumption frequency (63-item questionnaire),dietary_intake,ordered frequency category,ordinal,2007;2008;2009;2010;2011
+diet_khei_original_sweet_food_energy,Korean Healthy Eating Index (2013–2018 definition),dietary_intake,points (0–100),continuous,2013;2014;2015;2016;2017;2018
+diet_khei_revised_total_sugar_energy,Korean Healthy Eating Index (2019–2021 definition),dietary_intake,points (0–100),continuous,2019;2020;2021
+diet_ls_fruit,Fruit consumption frequency in the past year,dietary_intake,ordered frequency category,ordinal,2019;2020;2021;2022;2023;2024
+diet_ls_veg1,"Vegetables, mushrooms and seaweeds including kimchi and pickles consumption frequency in the past year",dietary_intake,ordered frequency category,ordinal,2019;2020;2021;2022;2023;2024
+diet_ls_veg2,"Vegetables, mushrooms and seaweeds excluding kimchi and pickles consumption frequency in the past year",dietary_intake,ordered frequency category,ordinal,2019;2020;2021;2022;2023;2024
+e_aerobic_activity_released,"Meeting aerobic physical activity recommendation, released definition",health_behaviors,category,binary,2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_alcohol_frequency,Past-year drinking frequency,health_behaviors,category,ordinal,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_alcohol_quantity_drinkers,Alcohol quantity per occasion among past-year drinkers,health_behaviors,category,ordinal,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_allownc_v9,Ever received basic livelihood assistance,socioeconomic,indicator,binary,2022;2023;2024
+e_be3_11,IPAQ vigorous activity days/week,health_behaviors,days/week,continuous,2007;2008;2009;2010;2011;2012;2013
+e_be3_21,IPAQ moderate activity days/week,health_behaviors,days/week,continuous,2007;2008;2009;2010;2011;2012;2013
+e_be3_31,Walking days/week,health_behaviors,days/week,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_be3_71,GPAQ vigorous work activity,health_behaviors,indicator,binary,2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_be3_75,GPAQ vigorous leisure activity,health_behaviors,indicator,binary,2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_be3_81,GPAQ moderate work activity,health_behaviors,indicator,binary,2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_be3_85,GPAQ moderate leisure activity,health_behaviors,indicator,binary,2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_be3_91,GPAQ active travel,health_behaviors,indicator,binary,2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_be5_1,Muscle-strengthening frequency,health_behaviors,category,ordinal,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_be5_2,Flexibility-exercise frequency,health_behaviors,category,ordinal,2007;2008;2009;2010;2011;2012;2013;2014;2015
+e_blood_cadmium,Blood cadmium,environmental_chemicals,ug/L,continuous,2008;2009;2010;2011;2012;2013;2016;2017
+e_blood_lead,Blood lead,environmental_chemicals,ug/dL,continuous,2008;2009;2010;2011;2012;2013;2016;2017
+e_blood_manganese,Blood manganese,environmental_chemicals,ug/dL,continuous,2008;2009
+e_blood_mercury,Blood mercury,environmental_chemicals,ug/L,continuous,2008;2009;2010;2011;2012;2013;2016;2017
+e_bp1,Perceived stress level,health_behaviors,category,ordinal,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_bp16_1,"Weekday sleep duration, direct report",health_behaviors,hours/day,continuous,2019;2020;2022;2023
+e_bp16_2,"Weekend sleep duration, direct report",health_behaviors,hours/day,continuous,2019;2020;2022;2023
+e_bs12_1_v9,Lifetime liquid e-cigarette use,tobacco,indicator,binary,2019;2020;2021;2022;2023;2024
+e_bs12_31_v9,Lifetime smokeless-tobacco use,tobacco,indicator,binary,2022;2023;2024
+e_bs12_32_v9,Lifetime waterpipe use,tobacco,indicator,binary,2022;2023;2024
+e_bs12_33_v9,Lifetime cigar use,tobacco,indicator,binary,2022;2023;2024
+e_bs12_37_v9,Lifetime heated-tobacco use,tobacco,indicator,binary,2019;2020;2021;2022;2023;2024
+e_bs13_v9,Public-place indoor secondhand smoke,tobacco,indicator,binary,2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_bs3_2_v9,Cigarettes/day among current cigarette smokers,tobacco,cigarettes/day,continuous,2022;2023;2024
+e_bs6_3_v9,Past cigarettes/day among former cigarette smokers,tobacco,cigarettes/day,continuous,2022;2023;2024
+e_bs8_2_v9,Workplace indoor secondhand smoke among eligible workers,tobacco,indicator,binary,2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_cfam,"Household size, published top-coded categories",socioeconomic,category,ordinal,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_cotinine_detectability_2017_2018,Urinary cotinine assay-reported detectability (2017-2018),tobacco,category,binary,2017;2018
+e_cotinine_detectability_2019_2021,Urinary cotinine assay-reported detectability (2019-2021),tobacco,category,binary,2019;2020;2021
+e_ec_stt_1_v9,Employment status among eligible workers,socioeconomic,category,categorical,2022;2023;2024
+e_ec_stt_2_v9,Employee contract category,socioeconomic,category,categorical,2022;2023;2024
+e_ec_wht_0_v9,Regular versus non-regular employment,socioeconomic,category,categorical,2022;2023;2024
+e_education,"Highest completed education, four groups",socioeconomic,category,ordinal,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_employed,Currently employed,socioeconomic,indicator,binary,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_ever_alcohol,Ever consumed alcohol,health_behaviors,indicator,binary,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_genertn,Household generation composition,socioeconomic,category,categorical,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_heated_tobacco_status_v9,Heated-tobacco use status,tobacco,category,categorical,2019;2020;2021;2022;2023;2024
+e_ho_incm,Annual household income quartile,socioeconomic,category,ordinal,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_house,Housing ownership,socioeconomic,category,ordinal,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_household_shs_v9,Indoor household secondhand smoke,tobacco,indicator,binary,2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_incm,Sex- and age-specific income quartile,socioeconomic,category,ordinal,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_liquid_ecig_current_v9,Current liquid e-cigarette use,tobacco,indicator,binary,2019;2020;2021;2022;2023;2024
+e_live_t,"Housing type, harmonized four groups",socioeconomic,category,categorical,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_occp,Broad occupation and not-employed category,socioeconomic,category,categorical,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_sedentary_minutes,Usual daily sitting time,health_behaviors,minutes/day,continuous,2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_sleep_daily_direct,Self-reported daily sleep duration,health_behaviors,hours/day,continuous,2007;2008;2009;2010;2011;2012;2013;2014;2015
+e_smoking_status,Established cigarette-smoking status,tobacco,category,categorical,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_town_t,Urban or rural residence,socioeconomic,category,binary,2007;2008;2009;2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+e_urinary_cotinine_released,"Urinary cotinine, released numerical concentration",tobacco,ng/mL,continuous,2008;2010;2011;2014;2015;2016
+e_urinary_nnal,Urinary NNAL,tobacco,pg/mL,continuous,2016;2017;2018
+e_urinary_total_arsenic_aas_cr,"Urinary total arsenic, AAS, creatinine adjusted",environmental_chemicals,ug/g creatinine,continuous,2008;2009
+e_work_hours_v9,Weekly work hours among respondents who worked,socioeconomic,hours/week,continuous,2022;2023;2024
+supp_day_b1,Thiamin intake from supplements on the previous day,supplements,mg/day,continuous,2018;2019;2020;2021
+supp_day_b2,Riboflavin intake from supplements on the previous day,supplements,mg/day,continuous,2018;2019;2020;2021
+supp_day_ca,Calcium intake from supplements on the previous day,supplements,mg/day,continuous,2018;2019;2020;2021
+supp_day_fe,Iron intake from supplements on the previous day,supplements,mg/day,continuous,2018;2019;2020;2021
+supp_day_niac,Niacin intake from supplements on the previous day,supplements,mg/day,continuous,2018;2019;2020;2021
+supp_day_phos,Phosphorus intake from supplements on the previous day,supplements,mg/day,continuous,2018;2019;2020;2021
+supp_day_va,Vitamin A intake (retinol equivalents) from supplements on the previous day,supplements,µg RAE/day,continuous,2018;2019;2020;2021
+supp_day_vitc,Vitamin C intake from supplements on the previous day,supplements,mg/day,continuous,2018;2019;2020;2021
+supp_ls_1mo,Supplement use at least weekly in the past month,supplements,binary,binary,2010;2011;2012
+supp_ls_1yr,Supplement use for at least 2 consecutive weeks in the past year,supplements,binary,binary,2010;2011;2012;2013;2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024
+supp_ls_fun,Health-functional food use,supplements,binary,binary,2007;2008;2009
+supp_ls_vit,Vitamin or mineral supplement use,supplements,binary,binary,2007;2008;2009
+supp_previous_day_use,Supplement use on the previous day,supplements,binary,binary,2018;2019;2020;2021
