@@ -1,0 +1,44 @@
+html{color:#333;background:#fff;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.5}
+body{margin:0}
+[hidden]{display:none!important}
+#atlas-shell{background:#fff;min-height:100vh}
+#atlas-shell *{box-sizing:border-box}
+#atlas-shell a{color:#397f96;text-decoration:none}
+#atlas-shell a:hover{text-decoration:underline}
+#atlas-shell a:focus-visible,#atlas-shell button:focus-visible{outline:2px solid #397f96;outline-offset:4px}
+.atlas-header{display:flex;align-items:flex-start;gap:12px;padding:0 15px;background:#f8f8f8;border-bottom:1px solid #e7e7e7}
+.atlas-brand{flex-shrink:0;padding:14px 0;font-size:18px;color:#555!important}
+.atlas-header nav{display:flex;flex-wrap:wrap;align-items:center}
+.atlas-header nav a{padding:15px 12px;line-height:20px;color:#555!important;display:block}
+.atlas-header nav a[aria-current="page"]{background:#e7e7e7;color:#333!important}
+#atlas-content{padding:12px 30px 48px;max-width:1240px}
+#atlas-content h1{font-size:36px;font-weight:500;line-height:1.15;margin:20px 0 16px}
+#atlas-content h2{font-size:28px;font-weight:500;line-height:1.2;margin:26px 0 12px}
+#atlas-content p{margin:0 0 10px;max-width:1080px}
+#atlas-content img{display:block;max-width:100%;height:auto}
+#atlas-content .study-flowchart{width:100%;max-width:1000px;margin:20px 0 12px}
+#atlas-content .col-sm-10{padding:0;width:100%}
+#downloads{margin-top:40px;padding-top:12px;border-top:1px solid #ddd;scroll-margin-top:15px}
+.download-list{padding-left:22px;margin:10px 0 24px}
+.download-list li{padding:6px 0}
+.download-list a{display:inline-block;min-height:24px}
+.atlas-loading{display:flex;align-items:center;flex-wrap:wrap;gap:10px 18px;padding:12px 30px;border-bottom:1px solid #dce5e8;background:#f6fafb;min-height:64px}
+#atlas-status{color:#355d68}
+#atlas-shell button{background:#fff;border:1px solid #97b2bb;border-radius:4px;padding:7px 12px;color:#355d68;font:inherit;cursor:pointer}
+#atlas-shell button:hover{background:#eaf2f4}
+.atlas-noscript{margin:15px 30px}
+.skip-link{position:absolute;left:15px;top:-60px;padding:8px 12px;background:white;z-index:20}
+.skip-link:focus{top:8px}
+#root{position:fixed;inset:0;height:100vh;height:100dvh;width:100%;background:#fff}
+#root.atlas-staging{opacity:0;pointer-events:none;z-index:-1}
+/* Keep the R frame measurable during startup; display:none would suspend plots. */
+@media(max-width:767px){
+ .atlas-header{display:block;padding:0 14px}
+ .atlas-brand{display:block;padding-bottom:4px}
+ .atlas-header nav{margin:0 -6px 4px}
+ .atlas-header nav a{padding:10px 8px;font-size:13px}
+ #atlas-content{padding:8px 18px 32px}
+ #atlas-content h1{font-size:28px}
+ #atlas-content h2{font-size:23px}
+ .atlas-loading{padding:10px 18px;min-height:100px}
+}

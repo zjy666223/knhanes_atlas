@@ -115,7 +115,8 @@ vibration_server <- function(input, output, session) {
   contributions <- reactive({
     x <- chosen(); voe_read('drivers',x$pair_id,x$contrast_id)
   })
-  observeEvent(contributions(), {
+  observe({
+    req(identical(input$main_nav, 'Vibration of effects'))
     d <- contributions()
     available <- intersect(names(voe$factors),d$factor[is.finite(d$change_in_absolute_beta)])
     if (!length(available)) available <- names(voe$factors)

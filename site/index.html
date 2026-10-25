@@ -1,28 +1,111 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KNHANES Atlas</title>
-    <script
-      src="./shinylive/load-shinylive-sw.js"
-      type="module"
-    ></script>
-    <script type="module">
-      import { runExportedApp } from "./shinylive/shinylive.js";
-      runExportedApp({
-        id: "root",
-        appEngine: "r",
-        relPath: "",
-      });
-    </script>
-    <link rel="stylesheet" href="./shinylive/style-resets.css" />
-    <link rel="stylesheet" href="./shinylive/shinylive.css" />
-    <script>window.knhanesSiteRoot=new URL(".",window.location.href).href;</script><meta name="description" content="KNHANES 2007–2024 phenome–exposome atlas and vibration of effects.">
-  </head>
-  <body>
-    
-    <div style="height: 100vh; width: 100vw" id="root"></div>
-    
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KNHANES Atlas</title>
+  <meta name="description" content="KNHANES 2007–2024 phenome–exposome atlas and vibration of effects.">
+  <meta name="atlas-build" content="379986bf151af602">
+  <style>html{color:#333;background:#fff;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.5}
+body{margin:0}
+[hidden]{display:none!important}
+#atlas-shell{background:#fff;min-height:100vh}
+#atlas-shell *{box-sizing:border-box}
+#atlas-shell a{color:#397f96;text-decoration:none}
+#atlas-shell a:hover{text-decoration:underline}
+#atlas-shell a:focus-visible,#atlas-shell button:focus-visible{outline:2px solid #397f96;outline-offset:4px}
+.atlas-header{display:flex;align-items:flex-start;gap:12px;padding:0 15px;background:#f8f8f8;border-bottom:1px solid #e7e7e7}
+.atlas-brand{flex-shrink:0;padding:14px 0;font-size:18px;color:#555!important}
+.atlas-header nav{display:flex;flex-wrap:wrap;align-items:center}
+.atlas-header nav a{padding:15px 12px;line-height:20px;color:#555!important;display:block}
+.atlas-header nav a[aria-current="page"]{background:#e7e7e7;color:#333!important}
+#atlas-content{padding:12px 30px 48px;max-width:1240px}
+#atlas-content h1{font-size:36px;font-weight:500;line-height:1.15;margin:20px 0 16px}
+#atlas-content h2{font-size:28px;font-weight:500;line-height:1.2;margin:26px 0 12px}
+#atlas-content p{margin:0 0 10px;max-width:1080px}
+#atlas-content img{display:block;max-width:100%;height:auto}
+#atlas-content .study-flowchart{width:100%;max-width:1000px;margin:20px 0 12px}
+#atlas-content .col-sm-10{padding:0;width:100%}
+#downloads{margin-top:40px;padding-top:12px;border-top:1px solid #ddd;scroll-margin-top:15px}
+.download-list{padding-left:22px;margin:10px 0 24px}
+.download-list li{padding:6px 0}
+.download-list a{display:inline-block;min-height:24px}
+.atlas-loading{display:flex;align-items:center;flex-wrap:wrap;gap:10px 18px;padding:12px 30px;border-bottom:1px solid #dce5e8;background:#f6fafb;min-height:64px}
+#atlas-status{color:#355d68}
+#atlas-shell button{background:#fff;border:1px solid #97b2bb;border-radius:4px;padding:7px 12px;color:#355d68;font:inherit;cursor:pointer}
+#atlas-shell button:hover{background:#eaf2f4}
+.atlas-noscript{margin:15px 30px}
+.skip-link{position:absolute;left:15px;top:-60px;padding:8px 12px;background:white;z-index:20}
+.skip-link:focus{top:8px}
+#root{position:fixed;inset:0;height:100vh;height:100dvh;width:100%;background:#fff}
+#root.atlas-staging{opacity:0;pointer-events:none;z-index:-1}
+/* Keep the R frame measurable during startup; display:none would suspend plots. */
+@media(max-width:767px){
+ .atlas-header{display:block;padding:0 14px}
+ .atlas-brand{display:block;padding-bottom:4px}
+ .atlas-header nav{margin:0 -6px 4px}
+ .atlas-header nav a{padding:10px 8px;font-size:13px}
+ #atlas-content{padding:8px 18px 32px}
+ #atlas-content h1{font-size:28px}
+ #atlas-content h2{font-size:23px}
+ .atlas-loading{padding:10px 18px;min-height:100px}
+}
+</style>
+  <script>window.knhanesSiteRoot=new URL('.',window.location.href).href;</script>
+  <script src="./loader.js?v=7c327ef88fffd332" defer></script>
+</head>
+<body>
+  <div id="atlas-shell">
+    <a class="skip-link" href="#atlas-content">Skip to study</a>
+    <header class="atlas-header">
+      <a class="atlas-brand" href="#about">KNHANES Atlas</a>
+      <nav aria-label="Atlas navigation"><a href="#about" aria-current="page">About</a><a href="#atlas-loading" data-atlas-tab="Browse By Phenotype">Browse By Phenotype</a><a href="#atlas-loading" data-atlas-tab="Browse By Exposure">Browse By Exposure</a><a href="#atlas-loading" data-atlas-tab="Browse by Exposure Group">Browse by Exposure Group</a><a href="#atlas-loading" data-atlas-tab="E Catalog">E Catalog</a><a href="#atlas-loading" data-atlas-tab="P Catalog">P Catalog</a><a href="#atlas-loading" data-atlas-tab="Vibration of effects">Vibration of effects</a><a href="#downloads">Downloads</a></nav>
+    </header>
+    <div class="atlas-loading" id="atlas-loading">
+      <span id="atlas-status" role="status" aria-live="polite">Preparing interactive analyses…</span>
+      <button id="atlas-open" type="button" hidden>Open interactive atlas</button>
+      <button id="atlas-retry" type="button" hidden>Reload</button>
+    </div>
+    <noscript><style>.atlas-loading{display:none}</style><p class="atlas-noscript">Enable JavaScript to open the interactive analyses. The study overview and downloads are available below.</p></noscript>
+    <main id="atlas-content" tabindex="-1">
+      <section id="about" aria-label="Study overview">
+        <div class="col-sm-10">
+          <h1>The KNHANES Phenome–Exposome Atlas</h1>
+          <a href="research/figures/10_研究流程.png" target="_blank">
+            <img src="research/figures/10_研究流程.png" class="study-flowchart" width="2040" height="2336" fetchpriority="high" alt="Figure 1. KNHANES 2007–2024 study workflow: dataset preparation, core atlas and vibration of effects, health applications, measurement extensions and external evaluation."/>
+          </a>
+          <p>
+            <a href="research/figures/10_研究流程.png" target="_blank">View Figure 1 at full resolution</a>
+          </p>
+          <h2>Overview</h2>
+          <p>This atlas presents associations between 335 exposure indicators and 149 quantitative phenotypes in Korean adults aged 19 years and older, using KNHANES 2007–2024. Browse 24,008 exposure–phenotype pairs and 26,078 coefficient contrasts from survey-weighted analyses.</p>
+          <p>The study follows 140,372 participant records through adult eligibility and measurement harmonization to 100,556 contributing adults. It examines association robustness, exposure complementarity, insulin-resistance indices, physiological ageing, subjective memory and external evaluation in NHANES, CHARLS and ELSA.</p>
+          <h2>Using the atlas</h2>
+          <p>Choose a phenotype, exposure or exposure group from the navigation bar. Search the selector, switch plot tabs, sort and search the summary table, or download the results. Exposure and phenotype catalogs describe the available variables.</p>
+          <p>The Vibration of effects module explores the sensitivity of all 24,008 pairs to alternative adjustment sets, covering 26,078 coefficient contrasts and 1,535,744 fitted models. Select an association to inspect model estimates, covariate contributions and robustness.</p>
+          <h2>Analysis definitions</h2>
+          <p>Models incorporate survey weights, strata and primary sampling units. Coefficients describe standardized outcomes; continuous exposures use the log10 scale, ordinal exposures retain rank scores, and categorical exposures retain their reference comparisons.</p>
+          <p>Bonferroni and Benjamini–Yekutieli (BY) correction use the original 26,078 coefficient tests. Pair-level ΔR² is the additional survey-weighted variance explained by the full exposure term. The R² distribution counts each pair once, using its overall-exposure significance family of 24,008 tests.</p>
+          <p>Effect-size boxplots summarize absolute standardized coefficients by exposure group. Model comparison displays base-model and fully adjusted coefficients.</p>
+          <h2>Data and software</h2>
+          <p>
+            <a href="https://github.com/zjy666223/ZJR">ZJR analysis software</a>
+          </p>
+          <p>
+            <a href="#downloads">Data and figure downloads</a>
+          </p>
+        </div>
+      </section>
+      <section id="downloads" aria-label="Results and figure downloads">
+        <h1>Results and figure downloads</h1>
+        <h2>Summary results</h2>
+        <ul class="download-list"><li><a href="research/data/associations.csv" download>associations</a></li><li><a href="research/data/exposures.csv" download>exposures</a></li><li><a href="research/data/phenotypes.csv" download>phenotypes</a></li><li><a href="research/data/joint.csv" download>joint</a></li><li><a href="research/data/network.csv" download>network</a></li><li><a href="research/data/exposure_profiles.csv" download>exposure profiles</a></li><li><a href="research/data/phenotype_profiles.csv" download>phenotype profiles</a></li><li><a href="research/data/vibration.csv" download>vibration</a></li></ul>
+        <h2>Study figures</h2>
+        <ul class="download-list"><li><a href="research/figures/10_研究流程.png" download>Figure 1 · Study workflow</a></li><li><a href="research/figures/01_关联图谱.pdf" download>Figure 2 · Association atlas</a></li><li><a href="research/figures/02_方差解释.pdf" download>Figure 3 · Variance explained</a></li><li><a href="research/figures/03_关联矩阵.pdf" download>Figure 4 · Association matrix</a></li><li><a href="research/figures/04_暴露网络.pdf" download>Figure 5 · Exposure networks</a></li><li><a href="research/figures/05_年度重复.pdf" download>Extended Data 2 · Annual recurrence</a></li><li><a href="research/figures/06_调整模型.pdf" download>Extended Data 3 · Adjustment models</a></li><li><a href="research/figures/11_效应振动.pdf" download>Extended Data 4 · Vibration of effects</a></li><li><a href="research/figures/07_测量一致.pdf" download>Extended Data 5 · Measurement concordance</a></li><li><a href="research/figures/08_年龄交互.pdf" download>Extended Data 7 · Age interactions</a></li><li><a href="research/figures/09_关联谱.pdf" download>Extended Data 8 · Association profiles</a></li></ul>
+        <button type="button" data-atlas-tab="Downloads">Explore joint exposure models</button>
+      </section>
+    </main>
+  </div>
+  <div id="root" class="atlas-staging" aria-hidden="true" inert></div>
+</body>
 </html>

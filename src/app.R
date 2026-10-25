@@ -15,7 +15,6 @@ library(shiny)
 library(reactable)
 library(igraph)
 library(ggridges)
-library(ggpubr)
 
 
 # KNHANES adaptation: retain the upstream Shiny UI and server workflow.
@@ -245,7 +244,12 @@ plot_manhattan <- function(to_plot) {
   p <- p + geom_vline(data=xaxis_labels, aes(xintercept=max_x), linetype='dotted', col = 'black') + study_theme()
   p <- p + theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1), legend.position = "bottom")
   p2 <- p + xlab("") + ylab("ΔR²")
-  ggarrange(p1, p2,  nrow = 2, heights=c(1,1.4), common.legend = TRUE)
+  legend <- cowplot::get_legend(p1 + theme(legend.position="top"))
+  panels <- cowplot::plot_grid(p1 + theme(legend.position="none"),
+    p2 + theme(legend.position="none"), nrow=2, rel_heights=c(1,1.4))
+  combined <- gridExtra::arrangeGrob(legend, panels, ncol=1,
+    heights=grid::unit.c(sum(legend$height), grid::unit(1,"npc")-sum(legend$height)))
+  cowplot::ggdraw() + cowplot::draw_grob(grid::grobTree(combined))
 }
 
 plot_effect_size <- function(to_plot) {

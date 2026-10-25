@@ -22,13 +22,18 @@ packages = sorted(p for p in files if p.suffix == ".tgz")
 with (SITE / "research/data/associations.csv").open(newline="") as handle:
     associations = list(csv.DictReader(handle))
 conversion = json.loads((ROOT / "checks/data_conversion.json").read_text())
+active_packages = json.loads((ROOT / "checks/active_packages.json").read_text())
 manifest = {
     "name": "knhanes_atlas",
     "built_utc": datetime.now(timezone.utc).isoformat(),
     "format": "Shinylive for R",
     "application_sha256": sha256(SITE / "app.json"),
+    "homepage_sha256": sha256(SITE / "index.html"),
+    "loader_sha256": sha256(SITE / "loader.js"),
     "runtime_sha256": sha256(SITE / "shinylive/webr/R.wasm"),
     "package_archives": [{"file": str(p.relative_to(SITE)), "sha256": sha256(p)} for p in packages],
+    "active_package_archives": active_packages,
+    "startup_package_bytes": sum((SITE / "shinylive/webr" / p).stat().st_size for p in active_packages),
     "vibration_phenotype_files": len(list((SITE / "data/voe").glob("*.rds"))),
     "study_results": {"pairs": len({row["pair_id"] for row in associations}),
                       "coefficient_contrasts": len(associations),

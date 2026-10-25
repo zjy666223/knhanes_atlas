@@ -15,6 +15,8 @@ async function waitApp(p) {
     for (const f of p.frames()) {
       if (await f.locator('#pvarname').count()) {
         await f.waitForFunction(() => typeof window.Shiny?.setInputValue === 'function' && window.Shiny?.shinyapp?.$socket?.readyState === 1, null, { timeout: 60000 });
+        await p.waitForFunction(() => performance.getEntriesByName('atlas-interactive-ready').length > 0, null, {timeout: 60000});
+        if (await p.locator('#atlas-shell').isVisible()) await p.locator('#atlas-open').click();
         return f;
       }
     }

@@ -64,5 +64,25 @@
     new MutationObserver(resolveAssets).observe(document.body, {childList: true, subtree: true});
     if (window.jQuery) window.jQuery(document).on('shiny:connected', connect);
     connect();
+    // The static study page stays readable while this frame initializes.
+    const announce = type => window.parent.postMessage({type}, window.location.origin);
+    window.knhanesNavigate = tab => {
+      const link = [...document.querySelectorAll('.navbar-nav a[data-value]')]
+        .find(element => element.dataset.value === tab);
+      if (link) window.jQuery(link).tab('show');
+    };
+    let ready = false;
+    window.jQuery(document).on('shiny:idle', () => {
+      if (!ready && window.Shiny?.shinyapp?.$socket?.readyState === 1) {
+        ready = true;
+        announce('knhanes:ready');
+      }
+    }).on('shiny:disconnected', () => announce('knhanes:disconnected'));
+    document.addEventListener('click', event => {
+      if (event.target.closest('.navbar-nav a[data-value="About"]')) {
+        event.preventDefault();
+        announce('knhanes:home');
+      }
+    });
   });
 })();

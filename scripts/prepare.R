@@ -16,6 +16,15 @@ app <- sub('library(tidyverse)', 'library(dplyr)\nlibrary(tidyr)\nlibrary(forcat
 app <- gsub('library(fst)\n', '', app, fixed=TRUE)
 app <- gsub('library(gplots)\n', '', app, fixed=TRUE)
 app <- gsub('library(ggrepel)\n', '', app, fixed=TRUE)
+app <- gsub('library(ggpubr)\n', '', app, fixed=TRUE)
+# Keep the existing two-panel composition and shared legend using cowplot.
+app <- sub('ggarrange(p1, p2,  nrow = 2, heights=c(1,1.4), common.legend = TRUE)',
+  paste0('legend <- cowplot::get_legend(p1 + theme(legend.position="top"))\n',
+    '  panels <- cowplot::plot_grid(p1 + theme(legend.position="none"),\n',
+    '    p2 + theme(legend.position="none"), nrow=2, rel_heights=c(1,1.4))\n',
+    '  combined <- gridExtra::arrangeGrob(legend, panels, ncol=1,\n',
+    '    heights=grid::unit.c(sum(legend$height), grid::unit(1,"npc")-sum(legend$height)))\n',
+    '  cowplot::ggdraw() + cowplot::draw_grob(grid::grobTree(combined))'), app, fixed=TRUE)
 app <- sub('shiny::addResourcePath("research", normalizePath("../01_网站"))', '', app, fixed=TRUE)
 app <- gsub('../01_网站/data/', 'data/', app, fixed=TRUE)
 app <- sub('source("R/vibration.R", local=TRUE)', 'source("R/vibration.R", local=TRUE)\nsource("R/browser.R", local=TRUE)', app, fixed=TRUE)
@@ -37,6 +46,8 @@ start <- regexpr('voe_read <- function(', vibration, fixed=TRUE)[1]
 end <- regexpr('voe_theme <- function()', vibration, fixed=TRUE)[1]
 stopifnot(start>0L, end>start)
 vibration <- paste0(substr(vibration, 1L, start-1L), substr(vibration, end, nchar(vibration)))
+vibration <- sub('observeEvent(contributions(), {',
+  "observe({\n    req(identical(input$main_nav, 'Vibration of effects'))", vibration, fixed=TRUE)
 writeLines(vibration, file.path(src, 'R/vibration.R'))
 
 for (name in c('figures.json', 'joint.csv')) {

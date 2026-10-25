@@ -7,7 +7,10 @@ async function load(p,url) {
   await p.goto(url,{waitUntil:'domcontentloaded'});
   for(let i=0;i<180;i++) {
     for(const f of p.frames())if(await f.locator('#pvarname').count()){
-      await f.waitForFunction(()=>window.Shiny?.shinyapp?.$socket?.readyState===1,null,{timeout:60000});return f;
+      await f.waitForFunction(()=>window.Shiny?.shinyapp?.$socket?.readyState===1,null,{timeout:60000});
+      await p.waitForFunction(()=>performance.getEntriesByName('atlas-interactive-ready').length>0,null,{timeout:60000});
+      if(await p.locator('#atlas-shell').isVisible())await p.locator('#atlas-open').click();
+      return f;
     }
     await p.waitForTimeout(1000);
   }
