@@ -59,7 +59,12 @@ for (name in c('associations','exposures','phenotypes','joint','network','exposu
 }
 figures <- list.files(file.path(project, '01_网站/figures'), full.names=TRUE)
 figures <- figures[!startsWith(basename(figures), '.')]
-stopifnot(all(file.copy(figures, file.path(site, 'research/figures'), overwrite=TRUE)))
+if (!file.exists(file.path(site, 'research/publications.json'))) {
+  stopifnot(all(file.copy(figures, file.path(site, 'research/figures'), overwrite=TRUE)))
+}
+if (file.exists(file.path(site, 'research/publications.json'))) {
+  stopifnot(system2('python3', c('-B', shQuote(file.path(root,'scripts/publication-ui.py')))) == 0L)
+}
 
 fst::threads_fst(1L)
 summary <- readRDS(file.path(original, 'data/voe/summary.rds'))

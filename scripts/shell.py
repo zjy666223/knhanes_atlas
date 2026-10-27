@@ -73,8 +73,26 @@ nav += '<a href="#downloads">Downloads</a>'
 names = ["associations", "exposures", "phenotypes", "joint", "network",
          "exposure_profiles", "phenotype_profiles", "vibration"]
 results = "".join(f'<li><a href="research/data/{name}.csv" download>{name.replace("_", " ")}</a></li>' for name in names)
-figures = json.loads((ROOT / "src/data/figures.json").read_text())
-figure_links = "".join(f'<li><a href="research/{escape(item["file"], quote=True)}" download>{escape(item["title"])}</a></li>' for item in figures)
+catalog = json.loads((SITE / "research/publications.json").read_text())
+publication_version = sha256((SITE / "research/publications.json").read_bytes()).hexdigest()[:16]
+figure_links = ''
+for group in ['Main figures', 'Extended Data figures', 'Supplementary figures']:
+    figure_links += f'<h3>{group}</h3><div class="figure-gallery">'
+    for item in catalog['figures']:
+        if item['group'] != group:
+            continue
+        viewer = f'research/index.html?v={publication_version}#{item["id"]}'
+        figure_links += (f'<article><a href="{viewer}"><img src="research/{item["preview"]}?v={item["preview_sha256"][:16]}" '
+                         f'loading="lazy" alt="{escape(item["label"] + ". " + item["title"], quote=True)}">'
+                         f'{escape(item["label"])} · {escape(item["title"])}</a>'
+                         f'<p><a href="{viewer}">Preview</a> · <a href="research/{item["file"]}?v={item["sha256"][:16]}" '
+                         f'download="{item["source_file"]}">Download {Path(item["source_file"]).suffix[1:].upper()}</a></p></article>')
+    figure_links += '</div>'
+table_links = ''.join(f'<li>{escape(item["label"])} · {escape(item["title"])}<br>'
+                     f'<a href="research/index.html?v={publication_version}#{item["id"]}">Preview and search</a> · '
+                     f'<a href="research/{item["file"]}?v={item["sha256"][:16]}" download="{item["source_file"]}">Download Excel</a></li>'
+                     for item in catalog['tables'])
+workbook = catalog['workbook']
 loader = (ROOT / "scripts/loader.js").read_bytes()
 (SITE / "loader.js").write_bytes(loader)
 values = {
@@ -83,6 +101,9 @@ values = {
     "LOADER": sha256(loader).hexdigest()[:16],
     "STYLE": (ROOT / "scripts/shell.css").read_text(),
     "ABOUT": about, "NAV": nav, "RESULTS": results, "FIGURES": figure_links,
+    "TABLES": table_links,
+    "WORKBOOK": f'research/{workbook["file"]}?v={workbook["sha256"][:16]}',
+    "PUBLICATIONS": f'research/index.html?v={publication_version}',
 }
 page = (ROOT / "scripts/shell.html").read_text()
 for key, value in values.items():

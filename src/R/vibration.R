@@ -23,8 +23,8 @@ vibration_ui <- function() {
         unname(voe$factors)), selected='edu_analysis'),
       downloadButton('voe_models_download','Download model estimates'), br(), br(),
       downloadButton('voe_drivers_download','Download covariate contributions'),
-      hr(), a('Download Extended Data Figure 4',
-        href='research/figures/11_效应振动.pdf',download='Figure Extended 4_v1.pdf'),
+      hr(), a('Download Extended Data Figure 5',
+        href='research/figures/11_效应振动.pdf?v=a420e98901b283b2',download='Figure Extended 5.pdf'),
       br(), br(), a('Download all VoE summaries',href='research/data/vibration.csv',
         download='vibration.csv')
     ),

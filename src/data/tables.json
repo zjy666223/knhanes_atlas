@@ -1,0 +1,291 @@
+[
+  {
+    "id": "table-1",
+    "group": "Tables",
+    "kind": "table",
+    "label": "Table 1",
+    "title": "Comparison of key results from exposome studies",
+    "legend": [
+      "Comparison of the reference NHANES exposome study with the present KNHANES study. Rows summarize association significance, annual or cycle recurrence, heterogeneity, explained variance, dietary and biomarker measurement concordance, exposure correlations and age interactions. Association percentages use 123,774 tests for NHANES and 26,078 coefficient contrasts for KNHANES. Recurrence denotes nominal P < 0.05 in at least two survey cycles or years. ΔR² is additional explained variance beyond covariates, or beyond main effects for age interactions; entries are medians except where maxima or ranges are specified. Significant dietary, biomarker and correlation subsets use Bonferroni correction, and I² summaries use BY-significant associations. Reference-study values and the stated source-data summaries are identified in the table notes."
+    ],
+    "file": "tables/Table 1.xlsx",
+    "source_file": "Table 1.xlsx",
+    "sha256": "658506bb12fbcf6080ef1be40a977546c51f94c0b4709cef94af20fcd2bd0798",
+    "data": "tables/Table 1.json",
+    "data_sha256": "37eb28dc5b10613ad1725750ea9caa840535f7b757ee13ffc83836b6ca98af94",
+    "rows": 22,
+    "sections": 1
+  },
+  {
+    "id": "table-s1",
+    "group": "Supplementary tables",
+    "kind": "table",
+    "label": "Supplementary Table 1",
+    "title": "Core exposure–phenotype association results",
+    "legend": [
+      "Survey-weighted results for 26,078 coefficient contrasts from 24,008 eligible exposure–phenotype pairs. Rows identify the exposure, phenotype and modeled contrast and report coefficients, standard errors, test statistics, P values, sample sizes and annual-summary statistics where available. Continuous-exposure coefficients are expressed per standard deviation of log₁₀-transformed exposure; ordinal coefficients are per score increment and categorical coefficients are relative to the reference. Phenotypes are expressed in standard deviation units. The fields pval_BY and pvalue_bonferroni use the full 26,078-contrast family, whereas pval_BY_pheno applies BY adjustment within phenotype. Overall exposure-test statistics describe the full exposure term. The field rsq_adjusted_base_diff is the weighted R² increment over the covariate-only model on the same sample, expressed as a proportion. The suffix uwls denotes unrestricted weighted least-squares summaries across annual estimates. Vibration-of-effects results are provided in Supplementary Table 9."
+    ],
+    "file": "tables/Table S1.xlsx",
+    "source_file": "Table S1.xlsx",
+    "sha256": "f8be8b51e61ca78a045de6ad3933ddeb3efe03fb1cada9fa830a6a54b2851ee2",
+    "data": "tables/Table S1.json",
+    "data_sha256": "256ff29f68818110cc94ef6b164bc651a7fd7335c31ccbc31701b3d843894a66",
+    "rows": 26078,
+    "sections": 1
+  },
+  {
+    "id": "table-s2",
+    "group": "Supplementary tables",
+    "kind": "table",
+    "label": "Supplementary Table 2",
+    "title": "Core exposure catalog",
+    "legend": [
+      "Definitions and category assignments for the 335 eligible exposure variables in the core atlas. Each row provides the analysis variable identifier, exposure category, subcategory and descriptive label. The seven categories comprise dietary intake, supplements, nutrient biomarkers, environmental chemicals, tobacco exposure, health behaviors and socioeconomic factors. Alternative instruments, assay versions and operational definitions remain separate analysis variables where required by the harmonization rules. Identifiers link to the association results in Supplementary Table 1."
+    ],
+    "file": "tables/Table S2.xlsx",
+    "source_file": "Table S2.xlsx",
+    "sha256": "29c5f651ca39d96d9a69c8a8e2233f28469731b8e6a6daea1a4583f05cf9aee8",
+    "data": "tables/Table S2.json",
+    "data_sha256": "a1711b2a4de75bab8789bca585c91d9918221f592f98f2d95b3b91c736c01904",
+    "rows": 335,
+    "sections": 1
+  },
+  {
+    "id": "table-s3",
+    "group": "Supplementary tables",
+    "kind": "table",
+    "label": "Supplementary Table 3",
+    "title": "Core phenotype catalog",
+    "legend": [
+      "Definitions and domain assignments for the 149 quantitative phenotype variables in the core atlas. Each row provides the phenotype identifier, category and descriptive label. The nine domains comprise anthropometry and body composition, blood pressure, glycemic traits, lipids, liver, kidney, hematology, bone and pulmonary function. Distinct measurement or assay versions retain separate identifiers where harmonization did not establish equivalence. Identifiers link to Supplementary Table 1."
+    ],
+    "file": "tables/Table S3.xlsx",
+    "source_file": "Table S3.xlsx",
+    "sha256": "ee64a4a3a923555c5fa378cb44fa6dc4237186d3f8581e2b6bd955f1f29009e7",
+    "data": "tables/Table S3.json",
+    "data_sha256": "0ff85c1acb5c5c45793a86f4480cacc2ee9e98d966fbdc1660dc58ce869c76f5",
+    "rows": 149,
+    "sections": 1
+  },
+  {
+    "id": "table-s4",
+    "group": "Supplementary tables",
+    "kind": "table",
+    "label": "Supplementary Table 4",
+    "title": "Tested coefficients by exposure category and subcategory",
+    "legend": [
+      "Counts of core coefficient contrasts grouped by exposure category and subcategory, with representative exposure measures. N counts rows in Supplementary Table 1, including separate nonreference contrasts for categorical exposures. The counts sum to 26,078."
+    ],
+    "file": "tables/Table S4.xlsx",
+    "source_file": "Table S4.xlsx",
+    "sha256": "019888cf0314e3a77ad5dcc0e6951e084f9a6ea8945f2f978f21b7a8ca219da5",
+    "data": "tables/Table S4.json",
+    "data_sha256": "cc595aabc76d71b1b717e9197489c76459dc3edce1fdb15468fb2f55d4b04d47",
+    "rows": 23,
+    "sections": 1
+  },
+  {
+    "id": "table-s5",
+    "group": "Supplementary tables",
+    "kind": "table",
+    "label": "Supplementary Table 5",
+    "title": "Tested coefficients by phenotype category and subcategory",
+    "legend": [
+      "Counts of core coefficient contrasts grouped by phenotype category and subcategory, with representative phenotypes. N counts rows in Supplementary Table 1, including separate nonreference contrasts for categorical exposures. The counts sum to 26,078."
+    ],
+    "file": "tables/Table S5.xlsx",
+    "source_file": "Table S5.xlsx",
+    "sha256": "f3159da066affa6851e015a55b047e81953c076c92a0dac25232d143b90d0af5",
+    "data": "tables/Table S5.json",
+    "data_sha256": "1c1ef5b16233d204850497a0f0bc1b6a97f74a63577b293bbc03044746fb0c27",
+    "rows": 25,
+    "sections": 1
+  },
+  {
+    "id": "table-s6",
+    "group": "Supplementary tables",
+    "kind": "table",
+    "label": "Supplementary Table 6",
+    "title": "Additional nutrient biomarker associations",
+    "legend": [
+      "Pooled and annual associations for serum folate, 25-hydroxyvitamin D₂ and 3-epi-25-hydroxyvitamin D₃. The table contains 101 pooled exposure–phenotype results and 298 annual estimates. Rows report survey years, sample size, standardized β, 95% confidence intervals, P values and BY-adjusted P values. Censored concentrations were handled using 50 completed datasets, and estimates were combined using Rubin’s rules with Barnard–Rubin degrees of freedom. Pooled BY adjustment uses the expanded family of 24,109 exposure–phenotype pairs."
+    ],
+    "file": "tables/Table S6.xlsx",
+    "source_file": "Table S6.xlsx",
+    "sha256": "ec9abc8661befc10ac341eadbb594f025a8c75aab3fc6529de9e77f147f76dcb",
+    "data": "tables/Table S6.json",
+    "data_sha256": "eabf50da6d6cf9ac068a02a10f41606248d5ecd4037ef7f47fcb20a1cb4c0ce1",
+    "rows": 399,
+    "sections": 1
+  },
+  {
+    "id": "table-s7",
+    "group": "Supplementary tables",
+    "kind": "table",
+    "label": "Supplementary Table 7",
+    "title": "Sensitivity analyses for additional nutrient biomarkers",
+    "legend": [
+      "Sensitivity analyses using Student’s t models with five degrees of freedom for censored log concentrations, restriction of vitamin D analyses to adults aged at least 40 years, and reclassification of five folate boundary values as censored. The 202 estimates comprise 101 Student’s t results, 66 age-restricted vitamin D results and 35 folate-boundary results. Rows identify the analysis, sample size, standardized coefficient, 95% confidence interval, P value, BY-adjusted P value and agreement in direction with the primary estimate."
+    ],
+    "file": "tables/Table S7.xlsx",
+    "source_file": "Table S7.xlsx",
+    "sha256": "0c64f5eff6123618d37293353860e72c52b556ff999eac75ebaaedf9d10f5409",
+    "data": "tables/Table S7.json",
+    "data_sha256": "ade7c269160922969749efcefdacc84addd984d8a72c71a160b2616f031a3705",
+    "rows": 202,
+    "sections": 1
+  },
+  {
+    "id": "table-s8",
+    "group": "Supplementary tables",
+    "kind": "table",
+    "label": "Supplementary Table 8",
+    "title": "Environmental measurement concordance, sensitivity analyses and additional exposure modules",
+    "legend": [
+      "The first block compares phenotype-association profiles for paired air exposures and urinary biomarkers, with Pearson correlations, confidence intervals, direction agreement and BY-adjusted P values across the stated phenotype groups, creatinine adjustments, smoking adjustments and sample restrictions. The second block reports primary and sensitivity models for the July 2020–August 2021 environmental survey. The primary family comprises 437 planned combinations of 19 exposures and 23 phenotypes. Sensitivity analyses assess smoking, air–urine sampling intervals, raw and log urinary-creatinine adjustment, creatinine-normalized exposures, LOD/2 substitution and censored-data multiple imputation. Rows report sample size, standardized β, confidence intervals, BY- and Bonferroni-adjusted P values and incremental R². Each sensitivity analysis retains the 437-hypothesis family. The third block reports the ambient air pollution, occupational exposure and urinary iodine–thyroid modules, comprising 894, 240 and 631 planned combinations, respectively. Air pollutants are 365-day mean concentrations linked to residential address, and these models additionally adjust for province, temperature and relative humidity; urinary iodine–thyroid analyses use the 2013–2015 surveys. Each module is corrected within its own test family. Rows report the contrast, sample size, survey years, standardized β, 95% confidence intervals, P values, BY- and Bonferroni-adjusted P values and incremental R². LOD, limit of detection."
+    ],
+    "file": "tables/Table S8.xlsx",
+    "source_file": "Table S8.xlsx",
+    "sha256": "c0c7974e59f655178ade9538c792d522965cbb9f2e39eee392fa693111198feb",
+    "data": "tables/Table S8.json",
+    "data_sha256": "ae14c0e659a33b0da30981b02c9031dbfc3d972406f50ae63974b856d33458be",
+    "rows": 3707,
+    "sections": 3
+  },
+  {
+    "id": "table-s9",
+    "group": "Supplementary tables",
+    "kind": "table",
+    "label": "Supplementary Table 9",
+    "title": "Atlas-wide vibration of effects and adjustment-factor contributions",
+    "legend": [
+      "Specification summaries for all 26,078 core coefficient contrasts from 24,008 exposure–phenotype pairs, based on 1,535,744 fitted models. Up to 64 specifications varied 12 optional adjustment factors while retaining a common sample and fixed survey design and variable scales within each pair. Rows report model counts, atlas significance status, the primary, median, percentile and extreme β values, coefficient range, direction agreement, significance retention, sign reversal and changes in |β| associated with inclusion of each factor. Nominal retention uses P < 0.05 and Bonferroni retention uses P < 0.05/26,078. Sign reversal requires positive and negative estimates; the opposite-direction significance flag additionally requires nominal significance in both directions. The final block summarizes adjustment-factor contributions among atlas Bonferroni-significant coefficients, including category-specific shares of the largest contributor."
+    ],
+    "file": "tables/Table S9.xlsx",
+    "source_file": "Table S9.xlsx",
+    "sha256": "46e480953889f72fff9096d1d8e8a42a74dc3b197f75e8a058696b9b14370cde",
+    "data": "tables/Table S9.json",
+    "data_sha256": "175a7ad0687e7777dbdfe3ffd48eda51327b3cf69625f64182d4822635bb8163",
+    "rows": 26090,
+    "sections": 2
+  },
+  {
+    "id": "table-s10",
+    "group": "Supplementary tables",
+    "kind": "table",
+    "label": "Supplementary Table 10",
+    "title": "External replication and longitudinal follow-up",
+    "legend": [
+      "External evaluation of selected KNHANES associations in NHANES, CHARLS and ELSA. The first block reports cross-sectional comparisons, including historical and recent NHANES periods. The second block reports phenotype follow-up analyses, and the third reports incident-disease analyses in CHARLS with sensitivity analyses excluding early follow-up diagnoses or restricting objective baseline eligibility. Rows identify the cohort, period, exposure and phenotype contrast, matching grade, sample size, estimate, confidence interval and Holm-adjusted P value as applicable. Quantitative phenotype coefficients are expressed on the KNHANES outcome standard-deviation scale. Replication requires the same direction as KNHANES and Holm-adjusted P < 0.05 within the stated family."
+    ],
+    "file": "tables/Table S10.xlsx",
+    "source_file": "Table S10.xlsx",
+    "sha256": "1f2794d19c166995f876421c7e3f17e6d2aec4aafa84e0d4a5470a8210a3ba6b",
+    "data": "tables/Table S10.json",
+    "data_sha256": "41b1892f43a374978085e69e4d9fe86907ff8aeca9525f89d87728265ce8a659",
+    "rows": 2104,
+    "sections": 3
+  },
+  {
+    "id": "table-s11",
+    "group": "Supplementary tables",
+    "kind": "table",
+    "label": "Supplementary Table 11",
+    "title": "Joint exposure contributions to phenotypic variance",
+    "legend": [
+      "Results for 113 fitted joint exposure models. Rows identify the phenotype, number of jointly modeled exposures and incremental weighted R² over the covariate-only model. Models included up to 20 BY-selected exposures and used compatible measurement years, eligible participants and survey weights. Missing exposure values were imputed within the eligible analysis domain where required, and ΔR² was averaged across completed datasets. R² increments are proportions. The five clinical models summarized in Supplementary Table 12 are included in these 113 models."
+    ],
+    "file": "tables/Table S11.xlsx",
+    "source_file": "Table S11.xlsx",
+    "sha256": "f6a79c38d970e12d9663d13e272a3df7e197668f09f4b1be3662597d1022b467",
+    "data": "tables/Table S11.json",
+    "data_sha256": "8325c16b728ec2b1c659367931821a15e385a9f32c57a56ce75d6d0c6510456f",
+    "rows": 113,
+    "sections": 1
+  },
+  {
+    "id": "table-s12",
+    "group": "Supplementary tables",
+    "kind": "table",
+    "label": "Supplementary Table 12",
+    "title": "Five clinical joint models and complete-case comparisons",
+    "legend": [
+      "Joint models for body mass index, glycated hemoglobin, systolic blood pressure, diastolic blood pressure and forced expiratory volume in 1 s in KNHANES 2014–2016. Rows report the model sample size, number of exposures, incremental weighted R², complete-case sample size and complete-case incremental R². Complete-case comparisons used the same exposure panels and covariate specifications. ΔR² is expressed as a proportion. These five models are included in Supplementary Table 11."
+    ],
+    "file": "tables/Table S12.xlsx",
+    "source_file": "Table S12.xlsx",
+    "sha256": "6918fa60b7993e27470acd976380565aae947447156c79a919033616a0eabcd8",
+    "data": "tables/Table S12.json",
+    "data_sha256": "73bee012fe2797c8e87ee1d1efcc975d0934a5fbf556baec5d5b273b553707aa",
+    "rows": 5,
+    "sections": 1
+  },
+  {
+    "id": "table-s13",
+    "group": "Supplementary tables",
+    "kind": "table",
+    "label": "Supplementary Table 13",
+    "title": "Repeated dietary recalls and paired-day associations",
+    "legend": [
+      "The first block reports 102 correlations between day 1 and day 2 nutrient intakes: 31 nutrients in 2019 and 20 in 2009, each on original and log₁₀ scales. Paired adult samples contain 1,250 participants in 2019 and 1,486 in 2009. The second block reports 2,170 primary paired-day nutrient–phenotype analyses and 2,790 sensitivity results using common energy adjustment, common standardization or weekday adjustment. Within each comparison, both days use identical participants and a common phenotype scale. Rows give sample size, day-specific β estimates and confidence intervals, the day 2 minus day 1 difference and its confidence interval, and BY-adjusted P values. The 2019 analyses use the applicable second-day survey weights; 2009 analyses use equal weights with survey clustering and stratification."
+    ],
+    "file": "tables/Table S13.xlsx",
+    "source_file": "Table S13.xlsx",
+    "sha256": "286b00e1fb3e205687c42f333225cbbe4a66dd26a2b7895141324eaa45c234b3",
+    "data": "tables/Table S13.json",
+    "data_sha256": "61c8d6db33e11610d351ccb41efcfe477a3c2900dcd60a1dbf4aa65f225c7d29",
+    "rows": 5062,
+    "sections": 2
+  },
+  {
+    "id": "table-s14",
+    "group": "Supplementary tables",
+    "kind": "table",
+    "label": "Supplementary Table 14",
+    "title": "Conditional associations within exposure clusters",
+    "legend": [
+      "All 28 planned coefficient contrasts for GGT and systolic blood pressure, comprising 224 model–contrast records. Primary analyses used ten completed datasets. Sensitivity analyses used common complete cases and partitions with one fewer or one more cluster. Rows identify the phenotype, exposure contrast, analysis, model, sample size, survey years, coefficient in outcome standard-deviation units, 95% confidence interval and BY-adjusted P value. Model labels distinguish single-exposure estimates, adjustment for other cluster members, collinearity exclusions and single-member clusters. BY correction retains 28 planned contrasts per model specification and analysis. GGT, gamma-glutamyl transferase; GVIF, generalized variance inflation factor."
+    ],
+    "file": "tables/Table S14.xlsx",
+    "source_file": "Table S14.xlsx",
+    "sha256": "bb17dea0d438bf781da84732acd545a1f0a42578888e5a5aa4ae3e8d835c3646",
+    "data": "tables/Table S14.json",
+    "data_sha256": "274c5b2728cc4df36d59cd1afac0344b5a74da2452d62b9b136f473983b75f3e",
+    "rows": 224,
+    "sections": 1
+  },
+  {
+    "id": "table-s15",
+    "group": "Supplementary tables",
+    "kind": "table",
+    "label": "Supplementary Table 15",
+    "title": "Exposure information complementarity and substitution",
+    "legend": [
+      "Results for 376 complementary exposure relations and 17 one-way substitution relations evaluated with temporally separated training and validation samples. For each exposure pair and phenotype, rows report the relationship, sample sizes, survey years, base and joint R², joint ΔR², conditional increments for each exposure, confidence intervals and BY-adjusted P values. A second block summarizes comparisons of shared and incremental information across exposure categories and phenotype systems. R² values and increments are proportions."
+    ],
+    "file": "tables/Table S15.xlsx",
+    "source_file": "Table S15.xlsx",
+    "sha256": "5d5428dbaa60583003f5587d7f3d66259e0d6b7288d9e5891e376a0309a4c951",
+    "data": "tables/Table S15.json",
+    "data_sha256": "c360debb8f32aab8b35b5aed67522be024f939d649cc299d2dd1c90f52b48230",
+    "rows": 402,
+    "sections": 2
+  },
+  {
+    "id": "table-s16",
+    "group": "Supplementary tables",
+    "kind": "table",
+    "label": "Supplementary Table 16",
+    "title": "Physiological aging and subjective memory",
+    "legend": [
+      "Results for exposure associations with Klemera–Doubal method age acceleration, homeostatic dysregulation, allostatic load and subjective memory difficulty. Successive blocks report exposure associations, joint aging–memory signals, memory models with aging-score adjustment, comparisons across exposure constructs, selected discovery-stage exposures and independent-period validation. Rows specify the analysis sample, exposure scale, survey years, effect measure, estimate, confidence interval, P value and adjusted P value where applicable. Effect measures include standardized coefficients, log odds, odds ratios, probability differences and predictive-performance measures, as labeled in each block. KDM, Klemera–Doubal method."
+    ],
+    "file": "tables/Table S16.xlsx",
+    "source_file": "Table S16.xlsx",
+    "sha256": "0311f45d47c6dd733ca56241902633199880b84189225d7229dfc6a8b3b70900",
+    "data": "tables/Table S16.json",
+    "data_sha256": "e48386dee924272d8817ed3b024786f570acd4e794dbf1100b45b2a5e3208ff0",
+    "rows": 2351,
+    "sections": 6
+  }
+]

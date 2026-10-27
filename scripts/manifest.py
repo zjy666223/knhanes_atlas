@@ -30,6 +30,8 @@ manifest = {
     "application_sha256": sha256(SITE / "app.json"),
     "homepage_sha256": sha256(SITE / "index.html"),
     "loader_sha256": sha256(SITE / "loader.js"),
+    "publications": {"figures": 20, "tables": 17,
+                     "catalog_sha256": sha256(SITE / "research/publications.json")},
     "runtime_sha256": sha256(SITE / "shinylive/webr/R.wasm"),
     "package_archives": [{"file": str(p.relative_to(SITE)), "sha256": sha256(p)} for p in packages],
     "active_package_archives": active_packages,

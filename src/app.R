@@ -26,16 +26,17 @@ source("R/browser.R", local=TRUE)
 overview_text <- "This atlas presents associations between 335 exposure indicators and 149 quantitative phenotypes in Korean adults aged 19 years and older, using KNHANES 2007–2024. Browse 24,008 exposure–phenotype pairs and 26,078 coefficient contrasts from survey-weighted analyses."
 
 figure_files <- jsonlite::fromJSON("data/figures.json")
+table_files <- jsonlite::fromJSON("data/tables.json")
 
 ## ui
 ui <- navbarPage("KNHANES Atlas", id = "main_nav",
     tabPanel("About",
       mainPanel(width=10,
         h1("The KNHANES Phenome–Exposome Atlas"),
-        a(href="research/figures/10_研究流程.png", target="_blank",
-          img(`data-atlas-src`="research/figures/10_研究流程.png", class="study-flowchart",
+        a(href="research/figures/10_研究流程.png?v=6e392381aff280c5", target="_blank",
+          img(`data-atlas-src`="research/figures/10_研究流程.png?v=6e392381aff280c5", class="study-flowchart",
             alt="Figure 1. KNHANES 2007–2024 study workflow: dataset preparation, core atlas and vibration of effects, health applications, measurement extensions and external evaluation.")),
-        p(a("View Figure 1 at full resolution",href="research/figures/10_研究流程.png",target="_blank")),
+        p(a("View Figure 1 at full resolution",href="research/figures/10_研究流程.png?v=6e392381aff280c5",target="_blank")),
         h2("Overview"), p(overview_text),
         p("The study follows 140,372 participant records through adult eligibility and measurement harmonization to 100,556 contributing adults. It examines association robustness, exposure complementarity, insulin-resistance indices, physiological ageing, subjective memory and external evaluation in NHANES, CHARLS and ELSA."),
         h2("Using the atlas"),
@@ -139,13 +140,20 @@ ui <- navbarPage("KNHANES Atlas", id = "main_nav",
 ,
   vibration_ui(),
   tabPanel("Downloads", mainPanel(
-    h1("Results and figure downloads"),
+    h1("Results, figures and tables"),
     h3("Summary results"),
     tags$ul(lapply(c("associations", "exposures", "phenotypes", "joint", "network", "exposure_profiles", "phenotype_profiles", "vibration"), function(x)
       tags$li(a(gsub("_", " ", x), href=paste0("research/data/",x,".csv"), download=NA)))),
+    p(a("Browse all figures and tables", href="research/index.html", target="_blank")),
     h3("Study figures"),
     selectInput("figure", "Select a figure", choices=setNames(seq_len(nrow(figure_files)),figure_files$title)),
     uiOutput("figure_preview"),
+    # Publication tables begin
+    h3("Study tables"),
+    p(a("Download complete workbook", href="research/tables/Supplementary_Tables_KNHANES.xlsx?v=cd2a8b4a6b670d0e", download="Supplementary_Tables_KNHANES.xlsx")),
+    selectInput("publication_table", "Select a table", choices=setNames(seq_len(nrow(table_files)), paste(table_files$label, table_files$title, sep=" · "))),
+    uiOutput("publication_table_preview"),
+    # Publication tables end
     h3("Joint exposure models"), reactableOutput("joint_table")
   ))
 
@@ -691,10 +699,22 @@ server <- function(input, output, session) {
   output$figure_preview <- renderUI({
     req(input$figure)
     f <- figure_files[as.integer(input$figure),]
-    label <- if (grepl("\\.pdf$",f$file,ignore.case=TRUE)) "Download PDF" else "Download PNG"
-    tagList(p(a(label,href=paste0("research/",f$file),download=f$source_file)),
-      img(`data-atlas-src`=paste0("research/",f$preview),alt=f$title,style="max-width:100%;height:auto;"))
+    href <- paste0("research/", f$file, "?v=", substr(f$sha256, 1, 16))
+    label <- if (grepl("\\.pdf$", f$source_file, ignore.case=TRUE)) "Download PDF" else "Download PNG"
+    tagList(p(a(label, href=href, download=f$source_file), " · ", a("Open full resolution", href=href, target="_blank")),
+      a(href=href, target="_blank", img(`data-atlas-src`=paste0("research/", f$preview, "?v=", substr(f$preview_sha256, 1, 16)), alt=f$title, style="max-width:100%;height:auto;")),
+      lapply(f$legend[[1]], p))
   })
+  # Publication table server begin
+  output$publication_table_preview <- renderUI({
+    req(input$publication_table)
+    t <- table_files[as.integer(input$publication_table),]
+    tagList(p(a("Download Excel", href=paste0("research/", t$file, "?v=", substr(t$sha256, 1, 16)), download=t$source_file), " · ",
+      a("Open table preview", href=paste0("research/index.html?v=c8966348f0f88fc7#", t$id), target="_blank")),
+      tags$iframe(`data-atlas-src`=paste0("research/index.html?embedded=1&v=c8966348f0f88fc7#", t$id), title=t$label,
+        style="width:100%;height:800px;border:0;", loading="lazy"))
+  })
+  # Publication table server end
   output$joint_table <- renderReactable({
     x <- readr::read_csv("data/joint.csv",show_col_types=FALSE)
     reactable(x,searchable=TRUE,defaultSorted=list(delta_r2="desc"),
